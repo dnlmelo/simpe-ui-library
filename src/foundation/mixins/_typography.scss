@@ -1,0 +1,180 @@
+$size-small: 12px;
+$size-normal: 14px;
+$size-large: 16px;
+$size-extralarge: 18px;
+
+//Titles
+@mixin title-1{
+    color: inherit;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;        
+}
+
+@mixin title-2{
+    color: inherit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px
+}
+
+@mixin title-3{
+    color: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+
+@mixin title-4{
+    color: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+@mixin title-5{
+    color: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+// Small Text
+@mixin text-small{
+    color: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+@mixin text-small-medium{
+    color: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+@mixin text-small-bold{
+    color: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+@mixin text-small-underline{
+    color: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+// Normal text
+@mixin text-normal{
+    color: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+@mixin text-normal-medium{
+    color: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;     
+}
+
+@mixin text-normal-bold{
+    color: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+@mixin text-normal-underline{
+    color: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142@mixin 857% */
+    text-decoration-line: underline; 
+}
+
+// Large Text
+@mixin text-large{
+    color: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@mixin text-large-medium{
+    color: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;    
+}
+
+@mixin text-large-bold{
+    color: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+@mixin text-large-underline{
+    color: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;    
+    text-decoration-line: underline;
+}
+
+// Extra large Text
+@mixin text-extralarge{
+    color: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@mixin text-extralarge-medium{
+    color: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+@mixin text-extralarge-bold{
+    color: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+@mixin text-extralarge-underline{
+    color: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133@mixin 333% */
+    text-decoration-line: underline; 
+}
