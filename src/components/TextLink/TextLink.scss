@@ -1,0 +1,37 @@
+@use '../../foundation/index' as foundation;
+
+.textLink {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration-line: underline; 
+
+    .icon-left{
+        margin-right: 0.5rem;
+    }
+    .icon-right{
+        margin-left: 0.5rem;
+    }
+}
+
+.textLink--color-primary{
+    color: foundation.$color-product-normal
+}
+
+.textLink--color-info{
+    color: foundation.$color-blue-normal
+}
+
+.textLink--color-critical{
+    color: foundation.$color-red-normal
+}
+
+.textLink--color-success{
+    color: foundation.$color-green-normal
+}
+
+.textLink--color-normal{
+    color: foundation.$color-green-normal
+}
