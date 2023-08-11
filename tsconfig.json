@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "module": "ESNext",
-    "outDir": "dist",
-    "jsx": "react-jsx",
-    "rootDir": "./src",
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationDir": "./dist",
     "emitDeclarationOnly": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "strict": true,
   },
 
   "exclude": [
