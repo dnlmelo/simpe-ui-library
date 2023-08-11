@@ -8,6 +8,8 @@ library.add(fas);
  * Função que retorna um elemento com o ícone
  * @params name - nome do ícone
  **/
-export const getIcons = (name:string) =>{
-    return ( <FontAwesomeIcon icon={ name as IconName} />)
+export const getIcons = (name:string, position?:string) =>{
+    position = position? `icon-${position} `: ''
+
+    return ( <FontAwesomeIcon className={`icon ${position}`} icon={ name as IconName} />)
 } 
