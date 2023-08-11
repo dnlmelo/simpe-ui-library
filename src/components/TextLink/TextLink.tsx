@@ -9,7 +9,7 @@ const TextLink= (props:TextLinkProps) => {
     const color = props.color || 'normal'
 
   return (
-  <a className={ `textLink textLink--color-${color}`} 
+  <a href={props.href} className={ `textLink textLink--color-${color}`} 
     data-testid="TextLink" {...props}
   >
     {iconLeft}
