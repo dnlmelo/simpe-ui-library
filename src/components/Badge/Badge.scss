@@ -1,0 +1,84 @@
+@use '../../foundation/index' as foundation;
+
+.badge-base{
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+
+    &[disabled]{
+        cursor: not-allowed;
+    } 
+}
+
+.badge-size-small{
+    padding: 4px 8px;
+    gap: 8px; 
+}
+
+.badge-size-normal{
+    padding: 6px 10px;
+    gap: 12px; 
+    font-size: foundation.$size-normal
+}
+
+.badge-color-primary{
+    background-color: foundation.$color-product-normal;
+    color: white;
+}
+
+.badge-color-white{
+    background-color: foundation.$color-white;
+    color: foundation.$color-ink-dark;
+    border: 1px solid foundation.$color-cloud-dark;
+}
+
+.badge-color-primary-light{
+    background-color: foundation.$color-product-light;
+    color: foundation.$color-product-dark;
+    border: 1px solid foundation.$color-product-dark;
+}
+
+.badge-color-critical{
+    background-color: foundation.$color-red-normal;
+    color: foundation.$color-white;
+}
+
+.badge-color-critical-light{
+    background-color: foundation.$color-red-light;
+    color: foundation.$color-red-dark;
+    border: 1px solid foundation.$color-red-dark;
+}
+
+.badge-color-critical{
+    background-color: foundation.$color-red-normal;
+    color: foundation.$color-white;
+}
+
+.badge-color-info{
+    background-color: foundation.$color-blue-normal;
+    color: foundation.$color-white;
+}
+
+.badge-color-info-light{
+    background-color: foundation.$color-blue-light;
+    color: foundation.$color-blue-dark;
+    border: 1px solid foundation.$color-blue-dark;
+}
+
+.badge-color-success{
+    background-color: foundation.$color-green-normal;
+    color: foundation.$color-white;
+}
+
+.badge-color-success-light{
+    background-color: foundation.$color-green-light;
+    color: foundation.$color-green-dark;
+    border: 1px solid foundation.$color-green-dark;
+}
+
+.badge-elevation-1{
+    @include foundation.elevation-1;
+}
