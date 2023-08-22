@@ -13,3 +13,8 @@ export const getIcons = (name:string, position?:string) =>{
 
     return ( <FontAwesomeIcon className={`icon ${position}`} icon={ name as IconName} />)
 } 
+
+export function Icon(props:{name:string}) {
+    const icon = getIcons(props.name);
+    return icon;
+}

@@ -1,0 +1,27 @@
+@use '../../foundation/index' as foundation;
+
+.collapse {
+    background-color: white;
+    padding: 1rem
+}
+
+.collapse-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid foundation.$color-cloud-normal;
+}
+
+.collapse-body{
+    padding: 1rem;
+
+    &[data-collapsed=true]{
+        overflow: hidden;
+        padding: 0;
+        height: 0;
+    }
+
+    &[data-collapsed=false]{
+        overflow: auto;
+        height: auto;
+    }
+}
