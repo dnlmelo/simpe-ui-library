@@ -1,7 +1,13 @@
-.icon-left{
-    margin-right: 1rem;
+@use '../../foundation/index' as foundation;
+
+.icon-size-sm{
+    font-size: 10px
 }
 
-.icon-right{
-    margin-left: 1rem;
+.icon-size-md{
+    font-size: 14px
+}
+
+.icon-size-lg{
+    font-size: 18px
 }

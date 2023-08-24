@@ -13,8 +13,7 @@ export default meta;
 export const Primary: Story = {
   args: {
     color: 'primary',
-    text: 'Butão',
     type: 'button',
-    iconleft: 'user'
+    children: 'Button'
   },
 };

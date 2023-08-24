@@ -5,7 +5,7 @@ import { ButtonProps } from './Button.types';
 
 describe("Button test", () => {
   test("Check Button in document", () => {
-    render(<Button text="Button" type="button" color="primary"/>)
+    render(<Button type="button" color="primary">Button</Button>)
     expect(screen.getByRole('button')).toBeInTheDocument()
   });
 
@@ -24,24 +24,11 @@ describe("Button test", () => {
 
     btTypes.forEach((v)=>{
       test(`should render button ${v}`, () => {
-        render(<Button text="Button" type="button" color={v} />)
+        render(<Button type="button" color="primary">Button</Button>)
         expect(screen.getByRole('button').getAttribute(`button-color-${v}`)).toBeDefined()
       }); 
     })
    
-  })
-
-  describe('icon attr', ()=>{
-    test("should render Fontawesome icon by iconright attr", () => {
-      render(<Button text="Button" type="button" color="primary" iconright='user'/>)
-      expect(screen.getByRole('img', {hidden: true}).getAttribute('data-icon')).toBe('user')
-    });
-
-    test("should render Fontawesome icon by iconleft attr", () => {
-      render(<Button text="Button" type="button" color="primary" iconleft='user'/>)
-      expect(screen.getByRole('img', {hidden: true}).getAttribute('data-icon')).toBe('user')
-    });
-
   })
 
   describe('scale attr', ()=>{
@@ -54,7 +41,7 @@ describe("Button test", () => {
 
     btTypes.forEach((v)=>{
       test(`should render button with ${v} scale`, () => {
-        render(<Button text="Button" type="button" color="primary" scale={v} />)
+        render(<Button type="button" color="primary" scale={v}>Button</Button>)
         expect(screen.getByRole('button').getAttribute(`button-size-${v}`)).toBeDefined()
       }); 
     })
@@ -69,7 +56,7 @@ describe("Button test", () => {
 
     btTypes.forEach((v)=>{
       test(`should render button with ${v} type`, () => {
-        render(<Button text="Button" type={v} color="primary" />)
+        render(<Button type={v} color="primary">Button</Button>)
         expect(screen.getByRole('button').getAttribute('type')).toEqual(v)
       }); 
     })

@@ -5,6 +5,7 @@ import { DialogProps } from './Dialog.types';
 
 const Dialog:FC<DialogProps> = (props) => {
   const dialog = useRef({} as HTMLDialogElement);
+  const { cancelTitle = 'cancelar', confirmTitle = 'confirmar' } = props  
 
   useEffect(()=>{
     document.getElementById(props.trigger)?.addEventListener('click', onClick.bind(this))
@@ -32,19 +33,16 @@ const Dialog:FC<DialogProps> = (props) => {
         <Button 
           name='cancel'
           color='white' 
-          text={props.cancelTitle || 'Cancelar'} 
           type={'reset'} 
           onClick={ ()=>onClose(false) }
-        />
+        >{cancelTitle}</Button>
 
         <Button 
           name='confirm'
           color='primary' 
-          value={1} 
-          text={props.confirmTitle || 'Confirmar'} 
           type={'submit'} 
           onClick={ ()=> onClose(true) }
-        />
+        >{confirmTitle}</Button>
       </form>
     </dialog>
     </>

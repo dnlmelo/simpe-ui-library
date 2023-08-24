@@ -5,7 +5,7 @@ import { BadgeProps } from './Badge.types';
 
 describe('<Badge />', () => {
   test('it should mount', () => {
-    render(<Badge color='primary' text='2' />);
+    render(<Badge color='primary' text='2'/>);
     
     const badge = screen.getByTestId('Badge');
     
@@ -27,23 +27,10 @@ describe('<Badge />', () => {
     
     btTypes.forEach((v)=>{
       test(`should render button ${v}`, () => {
-        render(<Badge text="Button" color={v} />)
+        render(<Badge color={v} text='2'/>);
         expect(screen.getByRole('button').getAttribute(`button-color-${v}`)).toBeDefined()
       }); 
     })
-    
   })
   
-  describe('icon attr', ()=>{
-    test("should render Fontawesome icon by iconright attr", () => {
-      render(<Badge text="Badge" color="primary" iconright='user'/>)
-      expect(screen.getByRole('img', {hidden: true}).getAttribute('data-icon')).toBe('user')
-    });
-    
-    test("should render Fontawesome icon by iconleft attr", () => {
-      render(<Badge text="Badge" color="primary" iconleft='user'/>)
-      expect(screen.getByRole('img', {hidden: true}).getAttribute('data-icon')).toBe('user')
-    });
-    
-  })
 });

@@ -15,7 +15,7 @@ export default meta;
 export const Primary: Story = {
   decorators: [(story) => 
   <>
-  <Button id='x' text='button' color='primary' type={'button'}/>
+  <Button id='x' color='primary' type={'button'}>Button</Button>
   <div>{story()}</div>
   </>],
   args: {

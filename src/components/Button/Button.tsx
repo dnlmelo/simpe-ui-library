@@ -1,21 +1,14 @@
-import React from "react"
+import { FC } from 'react';
 import './Button.scss'
 import { ButtonProps } from "./Button.types"
-import { getIcons } from "../Icons"
 
-/**
- * Botão primário da Finvity
- **/
-export const Button = (props:ButtonProps) =>{
-    const size = 'button-size-'.concat(props.scale? props.scale : 'normal')
-    const iconLeft = props.iconleft && getIcons(props.iconleft) 
-    const iconRight = props.iconright && getIcons(props.iconright) 
+export const Button:FC<ButtonProps> = ({children, ...rest}) =>{
+    const {scale, color, } = rest;
+    const size = 'button-size-'.concat(scale? scale : 'normal')
 
     return (
-    <button className={`button-base ${size} button-color-${props.color}` } {...props}>
-        {iconLeft}
-        {props.text}
-        {iconRight}
+    <button className={`button-base ${size} button-color-${color}` } {...rest}>
+        {children}
     </button>
     )
 } 

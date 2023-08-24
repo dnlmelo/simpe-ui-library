@@ -12,7 +12,7 @@ type Story = StoryObj<typeof TextLink>;
 export default meta;
 export const Primary: Story = {
   args: {
-    text: 'Butão',
-    iconleft: 'user'
+    color: 'primary',
+    children: 'Button'
   },
 };

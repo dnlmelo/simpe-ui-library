@@ -4,7 +4,7 @@ import TextLink from './TextLink';
 
 describe('<TextLink />', () => {
   test('it should mount', () => {
-    render(<TextLink text='text'/>);
+    render(<TextLink>Link</TextLink>);
     
     const textLink = screen.getByTestId('TextLink');
 

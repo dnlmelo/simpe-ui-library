@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react';
 import './Collapse.scss';
-import { Icon } from '../Icons';
+import { Icon } from '../Icons/Icon';
 
 interface CollapseProps {
   title: string,
@@ -22,7 +22,7 @@ const Collapse = (props:CollapseProps) => {
         <div className="collapse-actions">
           {}
           <span onClick={toggleCollapse}>
-            <Icon name={collapsed? 'chevron-down': 'chevron-up'}></Icon> 
+            <Icon size='lg' name={collapsed? 'chevron-down': 'chevron-up'}></Icon> 
           </span>
         </div>
       </div>
