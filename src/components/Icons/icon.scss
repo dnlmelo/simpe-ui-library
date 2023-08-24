@@ -1,5 +1,17 @@
 @use '../../foundation/index' as foundation;
 
+.icon{
+    color: inherit;
+    padding: 2px;
+    width: 14px;
+    display: inline-block;
+    height: 14px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
 .icon-size-sm{
     font-size: 10px
 }
@@ -10,4 +22,16 @@
 
 .icon-size-lg{
     font-size: 18px
+}
+
+.icon-color-success{
+    background: foundation.$color-success
+}
+
+.icon-color-error{
+    background: foundation.$color-error
+}
+
+.icon-color-info{
+    background: foundation.$color-info
 }
