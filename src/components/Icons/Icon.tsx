@@ -9,7 +9,10 @@ library.add(fas);
 export function Icon(props:IconProps) {
     return(
     <span 
-        className={ `icon icon-size-${props.size} icon-color-${props.color}` }
+        className={ 
+            `icon icon-size-${props.size} 
+            icon-color-${props.color || 'normal'}` 
+        }
     >
         <FontAwesomeIcon 
         icon={ props.name as IconName} />
