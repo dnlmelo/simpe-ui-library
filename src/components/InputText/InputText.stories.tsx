@@ -10,12 +10,13 @@ type Story = StoryObj<typeof InputText>;
 
 export default meta;
 
-export const Primary: Story = {
+export const Default: Story = {
   args: {
     id: 'x',
     label: 'label',
     infoMessage: 'msg',
     placeholder: 'Placeholder',
+    errorMessage: 'error',
     size: 'md',
     value: 'x',
     disabled: true
