@@ -1,12 +1,7 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import './Collapse.scss';
 import { Icon } from '../Icons/Icon';
-
-interface CollapseProps {
-  title: string,
-  children: ReactNode
-  collapsed: boolean
-}
+import { CollapseProps } from './Collapse.types';
 
 const Collapse = (props:CollapseProps) => {
   const [collapsed, setCollapse] = useState(props.collapsed)
@@ -20,7 +15,6 @@ const Collapse = (props:CollapseProps) => {
       <div className="collapse-header">
         <p className='text-normal-bold'>{props.title}</p>
         <div className="collapse-actions">
-          {}
           <span onClick={toggleCollapse}>
             <Icon size='lg' name={collapsed? 'chevron-down': 'chevron-up'}></Icon> 
           </span>
