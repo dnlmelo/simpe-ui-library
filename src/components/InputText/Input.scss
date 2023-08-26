@@ -1,0 +1,69 @@
+@use '../../foundation/index' as foundation;
+
+.input{
+    display: inline-block;
+}
+
+input{
+    border-radius: 3px;
+    border: 1px solid foundation.$color-cloud-dark;
+    background: #fff;
+    color: foundation.$color-ink-dark;
+
+    &::placeholder{
+        color: foundation.$color-ink-light
+    }
+
+    &:disabled{
+        background-color: foundation.$color-cloud-normal;
+    }
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: foundation.$color-ink-dark;
+}
+
+.input-size-sm{
+    label, input{
+        font-size: foundation.$size-small;
+    }
+    input{
+        padding: 10px;
+    }
+}
+
+.input-size-md{
+    label, input{
+        font-size: foundation.$size-normal;
+    }
+    input{
+        padding: 12px;
+    }
+}
+
+.input-size-lg{
+    label, input{
+        font-size: foundation.$size-large;
+    }
+    input{
+        padding: 14px;
+    }
+}
+
+.error-msg{
+    font-size: foundation.$size-small;
+    color: foundation.$color-red-normal;
+}
+
+.input-error input{
+    border-color: foundation.$color-red-normal
+}
+
+.icon{
+    margin-right: 5px;
+}
+
