@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Icon } from '../Icons/Icon';
-import { InputProps } from './Input.types';
-import './Input.scss';
+import { InputProps } from './InputText.types';
+import './InputText.scss';
 
 const InputText: FC<InputProps> = (props) => {
   const { error, label, infoMessage, errorMessage, size, ...res} = props
@@ -15,10 +15,7 @@ const InputText: FC<InputProps> = (props) => {
     </label>
     <input type='text' {...res} />
     {errorMessage && error? 
-      <div 
-        data-testid="errorMsg" 
-        className='error-msg'
-      >
+      <div data-testid="errorMsg" className='error-msg' >
         {errorMessage}
       </div> : ""
     }
