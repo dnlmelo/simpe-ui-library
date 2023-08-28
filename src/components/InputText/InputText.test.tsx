@@ -13,11 +13,11 @@ describe('<Input />', () => {
   });
 
   test('check attr value', () => {
-    render(<InputText size='md' value={'x'} />);
+    render(<InputText size='md' defaultValue={'x'}  />);
     
     const input = screen.getByTestId('Input') as HTMLInputElement;
 
-    expect(input.value).toBe('x');
+    expect(input.querySelector('input')?.value).toBe('x');
   });
 
   test('check attr size', () => {
@@ -29,9 +29,9 @@ describe('<Input />', () => {
   });
 
   test('check attr label', () => {
-    render(<InputText size='md' id='x' label='label' value={'x'} />);
+    render(<InputText size='md' id='x' label='label' defaultValue={'x'} />);
     
-    const label = screen.getAllByLabelText('label');
+    const label = screen.getByLabelText('label');
 
     expect(label).toBeInTheDocument()
   });
@@ -40,12 +40,12 @@ describe('<Input />', () => {
     render(<InputText size='md' error={true} />);
     const input = screen.getByTestId('Input') as HTMLInputElement;
 
-    expect(input.classList.contains('input-error')).toBeInTheDocument()
+    expect(input.classList.contains('input-error')).toBe(true)
   });
 
   test('check attr errorMessage', () => {
-    render(<InputText size='md' errorMessage='error' />);
-    const msg = screen.getByTestId('error-msg');
+    render(<InputText size='md' errorMessage='error' error={true} />);
+    const msg = screen.getByTestId('errorMsg');
 
     expect(msg.textContent).toEqual('error')
   });
@@ -54,6 +54,6 @@ describe('<Input />', () => {
     render(<InputText size='md' infoMessage='info' />);
     const input = screen.getByTestId('Input') as HTMLInputElement;
 
-    expect(input.querySelector('.error-msg')).toBeInTheDocument()
+    expect(input.querySelector('svg')).toBeInTheDocument()
   });
 });
