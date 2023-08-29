@@ -1,9 +1,9 @@
 import { FC, KeyboardEvent, useState } from 'react';
-import { Icon } from '../Icons/Icon';
-import { InputProps } from './InputNumber.types';
+import { Icon } from '../../Icons/Icon';
+import { InputNumberProps } from './InputNumber.types';
 import './InputNumber.scss';
 
-const InputNumber: FC<InputProps> = (props) => {
+const InputNumber: FC<InputNumberProps> = (props) => {
   const { onKeyUp, onChange, error = false, label, infoMessage, errorMessage, size, ...res} = props
   const classes = `input input-number input-size-${size} ${error? 'input-error': ''}`
   const [_error, setError] = useState(error)
