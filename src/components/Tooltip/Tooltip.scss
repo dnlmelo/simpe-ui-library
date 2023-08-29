@@ -1,0 +1,94 @@
+@use '../../foundation/index' as foundation;
+
+.tooltip {
+    padding: 12px;
+    color: white;
+    font-size: foundation.$size-small;
+    font-weight: 600;
+    line-height: 1rem;
+    border-radius: 5px;
+    max-width: 300px;
+    position: absolute;
+    background: foundation.$color-info;
+    @include foundation.elevation-2;
+
+    &:after{
+        content: '';
+        position: absolute;
+    }
+
+    &[aria-hidden=true]{
+        visibility: hidden;
+    }
+}
+.tooltip-color-info{
+    background: foundation.$color-info;
+}
+
+.tooltip-color-error{
+    background: foundation.$color-error;
+}
+
+.tooltip-color-success{
+    background: foundation.$color-success;
+}
+
+.tooltip-position--top-center,
+.tooltip-position--top-left,
+.tooltip-position--top-right{
+    &:after{
+        bottom: -4px;
+        @include foundation.arrow-down;
+    }
+    &.tooltip-color-info:after{
+        border-top-color: foundation.$color-info;
+    }
+    
+    &.tooltip-color-error:after{
+        border-top-color: foundation.$color-error;
+    }
+    
+    &.tooltip-color-success:after{
+        border-top-color: foundation.$color-success;
+    }
+}
+
+.tooltip-position--bottom-center,
+.tooltip-position--bottom-left,
+.tooltip-position--bottom-right{
+    &:after{
+        top: -4px;
+        @include foundation.arrow-up;
+    }
+    &.tooltip-color-info:after{
+        border-bottom-color: foundation.$color-info;
+    }
+    
+    &.tooltip-color-error:after{
+        border-bottom-color: foundation.$color-error;
+    }
+    
+    &.tooltip-color-success:after{
+        border-bottom-color: foundation.$color-success;
+    }
+}
+
+.tooltip-position--top-right:after{
+    right: 5px;
+}
+.tooltip-position--top-center:after{
+    left: calc(50% - 5px);
+}
+.tooltip-position--top-left:after{
+    left: 5px;
+}
+
+.tooltip-position--bottom-right:after{
+    right: 5px;
+}
+.tooltip-position--bottom-center:after{
+    left: calc(50% - 5px);
+}
+.tooltip-position--bottom-left:after{
+    left: 5px;
+}
