@@ -11,7 +11,7 @@ const Collapse = (props:CollapseProps) => {
   }
 
   return (
-    <div className="collapse">
+    <div className="collapse" data-testid="Collapse">
       <div className="collapse-header">
         <p className='text-normal-bold'>{props.title}</p>
         <div className="collapse-actions">

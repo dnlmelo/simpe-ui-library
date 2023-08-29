@@ -20,8 +20,8 @@ describe('<Collapse />', () => {
     </Collapse>);
     
     const collapse = screen.getByTestId('Collapse');
-
-    expect(collapse.getAttribute('data-collapsed')).toBe(true);
+    const body = collapse.querySelector('[data-collapsed]')
+    expect(body?.getAttribute('data-collapsed')).toBe('true');
   });
   test('it should mount with children in collapse-body class', () => {
     render(<Collapse collapsed={true} title='xxx'>
