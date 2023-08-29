@@ -28,7 +28,7 @@ describe('<Badge />', () => {
     btTypes.forEach((v)=>{
       test(`should render button ${v}`, () => {
         render(<Badge color={v} text='2'/>);
-        expect(screen.getByRole('button').getAttribute(`button-color-${v}`)).toBeDefined()
+        expect(screen.getByText('2').getAttribute(`button-color-${v}`)).toBeDefined()
       }); 
     })
   })
