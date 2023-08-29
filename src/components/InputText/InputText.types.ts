@@ -1,4 +1,7 @@
 export interface InputProps extends Omit<React.HTMLProps<HTMLInputElement>, 'size'>{
+    /** id do input. Deve ser acionado para utilizar o 'infoMessage' */
+    id?: string
+
     /** Label do input */
     label?: string;
 

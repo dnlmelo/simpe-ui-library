@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Icon } from '../Icons/Icon';
 import { InputProps } from './InputText.types';
 import './InputText.scss';
+import Tooltip from '../Tooltip/Tooltip';
 
 const InputText: FC<InputProps> = (props) => {
   const { error, label, infoMessage, errorMessage, size, ...res} = props
@@ -10,7 +11,12 @@ const InputText: FC<InputProps> = (props) => {
   return (
   <div className={classes} data-testid="Input">
     <label htmlFor={res.id}>
-      {infoMessage && <Icon name='info' size='sm' color="info"></Icon>}
+      {infoMessage && 
+      <>
+        <Icon name='info' size='sm' color="info" id={`info-${res.id}`}></Icon>
+        <Tooltip color='info' triggerId={`info-${res.id}`} x={'left'} y={'top'}>{infoMessage}</Tooltip>
+      </>
+      }
       {label}
     </label>
     <input type='text' {...res} />

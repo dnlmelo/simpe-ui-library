@@ -12,6 +12,7 @@ export default meta;
 
 export const Default: Story = {
   args: {
+    id: 'x',
     label: 'label',
     infoMessage: 'msg',
     placeholder: 'Placeholder',
