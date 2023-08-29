@@ -1,0 +1,34 @@
+@use '../../foundation/index' as foundation;
+
+.keyValue {
+    display: inline-flex;
+    flex-direction: column;
+    text-transform: capitalize;
+
+    &.keyValue-size--md{
+        .keyText{
+            font-size: foundation.$size-small;
+        }
+        .valueText{
+            font-size: foundation.$size-normal;
+        }
+    }
+
+    &.keyValue-size--lg{
+        .keyText{
+            font-size: foundation.$size-normal;
+        }
+        .valueText{
+            font-size: foundation.$size-large;
+        }
+    }
+}
+
+.valueText{
+    color: foundation.$color-ink-dark;
+    font-weight: 600;
+}
+
+.keyText{
+    color: foundation.$color-ink-normal;
+}
