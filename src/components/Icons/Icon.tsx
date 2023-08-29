@@ -13,6 +13,7 @@ export function Icon(props:IconProps) {
             `icon icon-size-${props.size} 
             icon-color-${props.color || 'normal'}` 
         }
+        {...props}
     >
         <FontAwesomeIcon 
         icon={ props.name as IconName} />

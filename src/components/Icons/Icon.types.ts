@@ -1,4 +1,7 @@
 export interface IconProps{
+    /** Id */
+    id?:string
+
     /** Nome do icon no FontAwesome */
     name: string
 
