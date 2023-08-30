@@ -4,7 +4,7 @@
     display: inline-block;
 }
 
-input{
+input, select{
     border-radius: 3px;
     border: 1px solid foundation.$color-cloud-dark;
     background: #fff;
@@ -28,28 +28,28 @@ label{
 }
 
 .input-size-sm{
-    label, input{
+    label, input, select{
         font-size: foundation.$size-small;
     }
-    input{
+    input, select{
         padding: 10px;
     }
 }
 
 .input-size-md{
-    label, input{
+    label, input, select{
         font-size: foundation.$size-normal;
     }
-    input{
+    input, select{
         padding: 12px;
     }
 }
 
 .input-size-lg{
-    label, input{
+    label, input, select{
         font-size: foundation.$size-large;
     }
-    input{
+    input, select{
         padding: 14px;
     }
 }
@@ -59,7 +59,7 @@ label{
     color: foundation.$color-red-normal;
 }
 
-.input-error input{
+.input-error input, select{
     border-color: foundation.$color-red-normal
 }
 
