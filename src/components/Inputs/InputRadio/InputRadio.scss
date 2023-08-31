@@ -1,0 +1,69 @@
+@import '../../../foundation/colors';
+@import '../../../foundation/sizes';
+
+.inputRadio{
+    display: inline-block;
+
+    label{
+        color: $color-ink-dark;
+        text-transform: capitalize;
+    }
+    .icon{
+        margin-left: 5px;
+        vertical-align: text-bottom;
+        margin-bottom: 2px;
+    }
+    input[type="radio"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: white;
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        color: currentColor;
+        border: 1px solid $color-cloud-dark;
+        border-radius: 50%;
+        vertical-align: bottom;
+        display: inline-grid;
+        place-content: center;
+        margin-right: 5px;
+    }
+    
+    input[type="radio"]::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em white;
+        background-color: CanvasText;
+    }
+    
+    input[type="radio"]:checked{
+        background-color: $color-info;
+        border: none;
+        &::before {
+            transform: scale(1);
+        }
+
+        &:disabled{
+            background-color: $color-ink-light;
+        }
+    }
+    
+    .error-msg{
+        font-size: $size-small;
+        color: $color-red-normal;
+    }
+
+    
+    &.inputRadio-size-md label{
+        font-size: $size-normal;
+    }
+    
+    &.inputRadio-size-lg label{
+        font-size: $size-large;
+    }
+}
+
