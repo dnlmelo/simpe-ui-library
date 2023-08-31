@@ -57,7 +57,10 @@
         color: $color-red-normal;
     }
 
-    
+    &.inputRadio-error input{
+        border: 1px solid $color-error;
+    } 
+
     &.inputRadio-size-md label{
         font-size: $size-normal;
     }
