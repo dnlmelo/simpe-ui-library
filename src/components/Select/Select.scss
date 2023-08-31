@@ -9,3 +9,8 @@ select{
     background-position-x: 100%;
     background-position-y: 50%;
 }
+.input-size-md select,
+.input-size-lg select,
+.input-size-sm select{
+    padding-right: 32px;
+}

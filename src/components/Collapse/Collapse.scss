@@ -8,6 +8,8 @@
 .collapse-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
     border-bottom: 1px solid foundation.$color-cloud-normal;
 }
 

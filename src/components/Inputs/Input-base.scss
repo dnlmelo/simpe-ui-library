@@ -17,6 +17,10 @@ input, select{
     &:disabled{
         background-color: foundation.$color-cloud-normal;
     }
+
+    .icon{
+        vertical-align: bottom;
+    }
 }
 
 label{
