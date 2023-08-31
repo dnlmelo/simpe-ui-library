@@ -1,0 +1,229 @@
+@use '../../foundation/index.scss' as foundation;
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100px;
+    padding: 12px;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+
+    .icon{
+        color: inherit;
+    }
+}
+
+.dropdown-color-default .dropdown-button{
+    border: 1px solid foundation.$color-cloud-dark;
+}
+
+.dropdown-color-primary .dropdown-button{
+    background-color: foundation.$color-product-normal;
+    color: white;
+
+    &:hover{
+        background-color: foundation.$color-product-normal-hover
+    }
+    &:active{
+        background-color: foundation.$color-product-normal-active
+    }
+}
+
+.dropdown-color-white .dropdown-button {
+    background-color: foundation.$color-white;
+    color: foundation.$color-ink-dark;
+    border: 1px solid foundation.$color-cloud-dark;
+    
+    &:hover{
+        background-color: foundation.$color-white-hover
+    }
+    &:active{
+        background-color: foundation.$color-white-active
+    }
+}
+
+.dropdown-color-primary-light .dropdown-button {
+    background-color: foundation.$color-product-light;
+    color: foundation.$color-product-dark;
+    border: 1px solid foundation.$color-product-dark;
+
+    &:hover{
+        background-color: foundation.$color-product-light-hover
+    }
+    &:active{
+        background-color: foundation.$color-product-light-active
+    }
+}
+
+.dropdown-color-critical .dropdown-button{
+    background-color: foundation.$color-red-normal;
+    color: foundation.$color-white;
+    
+    &:hover{
+        background-color: foundation.$color-red-normal-hover
+    }
+    &:active{
+        background-color: foundation.$color-red-normal-active
+    }
+}
+
+.dropdown-color-critical-light .dropdown-button{
+    background-color: foundation.$color-red-light;
+    color: foundation.$color-red-dark;
+    border: 1px solid foundation.$color-red-dark;
+
+    &:hover{
+        background-color: foundation.$color-red-light-hover
+    }
+    &:active{
+        background-color: foundation.$color-red-light-active
+    }
+}
+
+.dropdown-color-critical .dropdown-button{
+    background-color: foundation.$color-red-normal;
+    color: foundation.$color-white;
+    
+    &:hover{
+        background-color: foundation.$color-red-normal-hover
+    }
+
+    &:active{
+        background-color: foundation.$color-red-normal-active
+    }
+}
+
+.dropdown-color-info .dropdown-button{
+    background-color: foundation.$color-blue-normal;
+    color: foundation.$color-white;
+    
+    &:hover{
+        background-color: foundation.$color-blue-normal-hover
+    }
+    
+    &:active{
+        background-color: foundation.$color-blue-normal-active
+    }
+}
+
+.dropdown-color-info-light .dropdown-button{
+    background-color: foundation.$color-blue-light;
+    color: foundation.$color-blue-dark;
+    border: 1px solid foundation.$color-blue-dark;
+    
+    &:hover{
+        background-color: foundation.$color-blue-light-hover
+    }
+    
+    &:active{
+        background-color: foundation.$color-blue-light-active
+    }
+}
+
+.dropdown-color-success .dropdown-button{
+    background-color: foundation.$color-green-normal;
+    color: foundation.$color-white;
+    
+    &:hover{
+        background-color: foundation.$color-green-normal-hover
+    }
+    
+    &:active{
+        background-color: foundation.$color-green-normal-active
+    }
+}
+
+.dropdown-color-success-light .dropdown-button{
+    background-color: foundation.$color-green-light;
+    color: foundation.$color-green-dark;
+    border: 1px solid foundation.$color-green-dark;
+    
+    &:hover{
+        background-color: foundation.$color-green-light-hover
+    }
+    
+    &:active{
+        background-color: foundation.$color-green-light-active
+    }
+}
+
+.dropdown-itens {
+    list-style: none;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 5px;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    top: 102%;
+    border: 1px solid foundation.$color-cloud-dark;
+    @include foundation.elevation-1;
+
+    &[aria-hidden=false]{
+        display: block;
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    .textLink{
+        width: 100%;
+        display: flex;
+        padding: 3px 10px;
+        justify-content: space-between;
+        text-decoration: none;
+
+        .icon{
+            vertical-align: middle;
+            height: auto;
+            width: auto;
+        }
+
+        &:hover{
+            background-color: foundation.$color-cloud-light;
+        }
+    }
+}
+
+
+.dropdown-size-sm{
+    .dropdown-button{
+        padding: 10px;
+    }
+    .dropdown-button, .textLink{
+        font-size: foundation.$size-small;
+    }
+}
+
+.dropdown-size-md{
+    .dropdown-button{
+        padding: 12px;
+    }
+
+    .dropdown-button, .textLink{
+        font-size: foundation.$size-normal;
+    }
+}
+
+.dropdown-size-lg{
+    .dropdown-button{
+        padding: 14px;
+    }
+
+    .dropdown-button, .textLink{
+        font-size: foundation.$size-large;
+    }
+}
