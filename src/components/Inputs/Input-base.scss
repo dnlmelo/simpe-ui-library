@@ -4,33 +4,34 @@
     display: inline-block;
 }
 
-input, select{
-    border-radius: 3px;
-    border: 1px solid foundation.$color-cloud-dark;
-    background: #fff;
-    color: foundation.$color-ink-dark;
-
-    &::placeholder{
-        color: foundation.$color-ink-light
+.input {
+    input, select{
+        border-radius: 3px;
+        border: 1px solid foundation.$color-cloud-dark;
+        background: #fff;
+        color: foundation.$color-ink-dark;
+        
+        &::placeholder{
+            color: foundation.$color-ink-light
+        }
+        
+        &:disabled{
+            background-color: foundation.$color-cloud-normal;
+        }
+        
+        .icon{
+            vertical-align: bottom;
+        }
     }
-
-    &:disabled{
-        background-color: foundation.$color-cloud-normal;
-    }
-
-    .icon{
-        vertical-align: bottom;
+    
+    label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: foundation.$color-ink-dark;
     }
 }
-
-label{
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: foundation.$color-ink-dark;
-}
-
 .input-size-sm{
     label, input, select{
         font-size: foundation.$size-small;
