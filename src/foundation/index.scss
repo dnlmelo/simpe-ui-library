@@ -9,6 +9,8 @@
 
 :root{
     position: relative;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    color: $color-ink-normal;
     &, *{
         box-sizing: border-box;
     }
