@@ -1,0 +1,62 @@
+@import '../../../foundation/colors';
+@import '../../../foundation/elevations';
+@import '../../../foundation/sizes';
+
+.inputRange {
+  display: inline-block;
+  
+  label{
+    display: block;
+    color: $color-info;
+  }
+
+  input[type=range] {
+    display: block;
+    appearance: none;
+    height: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid $color-cloud-dark;
+    border-radius: 5px;
+    
+    &:focus {
+      outline: none;
+    }
+    
+    &::-webkit-slider-thumb {
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background: $color-info;
+      cursor: pointer;
+      -webkit-appearance: none;
+    }
+    
+    &::-moz-range-thumb {
+      height: 18px;
+      width: 18px;
+      border:none;
+      border-radius: 50%;
+      background: $color-info;
+      cursor: pointer;
+      @include elevation-1;
+    }
+
+    &::-ms-thumb {
+      margin-top: 1px;
+      box-shadow: 0px 0px 0px #000000;
+      border: 1px solid #2497E3;
+      height: 18px;
+      width: 18px;
+      border-radius: 25px;
+      background: #A1D0FF;
+      cursor: pointer;
+    }
+  }
+}
+
+.minMaxLabels{
+    display: flex;
+    justify-content: space-between;
+    font-size: $size-small;
+}
