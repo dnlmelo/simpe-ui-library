@@ -1,7 +1,7 @@
-@use 'colors' as foundation;
-@import "http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext";
+@use "colors" as foundation;
+@import "https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext";
 
-:root{
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    color: foundation.$color-ink-normal;
+:root {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: foundation.$color-ink-normal;
 }
