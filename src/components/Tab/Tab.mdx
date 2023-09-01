@@ -7,7 +7,7 @@ import * as TabStories from './Tab.stories';
 <Meta of={TabStories} />
 
 # Tab
-Utilizado para separar em seções, o conteúdo de uma página. O Component Tab é somente como um marcador. 
+Utilizado para separar o conteúdo de uma página em seções de contexto. O Component Tab é somente como um marcador. 
 Não faz o gerenciamento do estado do conteúdo (show/hide). Veja o exemplo de uso.
 
 <Canvas of={TabStories.Default}> </Canvas>
@@ -27,7 +27,7 @@ function Component(props:any){
     <Tab active={active === 'tab2'} label={'Tab2'} onActive={()=>setActive('tab2')}></Tab>
     <Tab active={active === 'tab3'} label={'Tab3'} onActive={()=>setActive('tab3')}></Tab>
   </div>
-  
+
   <div>
     {active === 'tab1' && <CardSection> Content tab 1 </CardSection>}
     {active === 'tab2' && <CardSection> Content tab 2 </CardSection>}
