@@ -18,11 +18,13 @@
         &:disabled{
             background-color: foundation.$color-cloud-normal;
         }
-        
-        .icon{
-            vertical-align: bottom;
-        }
+         
     }
+    .icon{
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
     
     label{
         display: block;
@@ -68,7 +70,4 @@
     border-color: foundation.$color-red-normal
 }
 
-.icon{
-    margin-right: 5px;
-}
 
