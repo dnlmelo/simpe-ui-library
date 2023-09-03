@@ -5,7 +5,7 @@
 }
 
 .input {
-    input, select{
+    input, select, textarea{
         border-radius: 3px;
         border: 1px solid foundation.$color-cloud-dark;
         background: #fff;
@@ -35,7 +35,7 @@
     }
 }
 .input-size-sm{
-    label, input, select{
+    label, input, select, textarea{
         font-size: foundation.$size-small;
     }
     input, select{
@@ -44,7 +44,7 @@
 }
 
 .input-size-md{
-    label, input, select{
+    label, input, select, textarea{
         font-size: foundation.$size-normal;
     }
     input, select{
@@ -53,7 +53,7 @@
 }
 
 .input-size-lg{
-    label, input, select{
+    label, input, select, textarea{
         font-size: foundation.$size-large;
     }
     input, select{
