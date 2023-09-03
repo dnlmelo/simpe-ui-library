@@ -1,0 +1,26 @@
+{/* EmptyState.mdx */}
+
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks';
+
+import * as EmptyStories from './EmptyState.stories';
+
+<Meta of={EmptyStories} />
+
+# EmptyState
+Componente para sinalizar que o resultado de uma interação do usuário teve uma excessão. 
+Pode receber como parametro qualquer elemento html como descrição
+
+<Canvas of={EmptyStories.Default}> </Canvas>
+
+*Os controles abaixo não são dinâmicos para este exemplo.*
+<Controls />
+
+## Exemplo de uso
+Recomenda-se utilizar apenas um `<p>` com a descrição e algum botão de ação
+
+```jsx
+<EmptyState>
+  <p> Sem resultados para a busca </p>
+  <TextLink href="/home">Voltar para o início</TextLink>
+</EmptyState>
+```

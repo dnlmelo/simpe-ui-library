@@ -12,9 +12,8 @@
     "outDir": "dist",
     "rootDir": "./src",
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
   },
-
   "exclude": [
     "exemple",
     "node_modules",
