@@ -1,0 +1,63 @@
+{/* Stepper.mdx */}
+
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks';
+
+import * as StepStories from './Stepper.stories';
+
+<Meta of={StepStories} />
+
+# Stepper
+Componente para demonstrar o conteúdo de uma página em seções de jornada. 
+Não faz o gerenciamento do estado do conteúdo (show/hide). Veja o exemplo de uso.
+
+<Canvas of={StepStories.Default}> </Canvas>
+
+<Controls />
+
+## Exemplo de uso
+
+<Canvas of={StepStories.Exemple}> </Canvas>
+```jsx
+function Component(props:any){
+  //Controle do estado do conteúdo (show/hide)
+  const [step, setStep] = useState(0)
+  const [allCompleted, setAllCompleted] = useState(false)
+
+  return <>
+    <Stepper
+    steps={['step 1', 'step2', 'step3']}
+    activedStep={step}
+    completedSteps={allCompleted? 'all' : 'allBeforeActive'} 
+  ></Stepper>
+
+  {step === 0 && <div>
+    <p>Content step 1 </p>
+    <Button 
+      onClick={() => setStep(1)}  
+      type={"button"} 
+      color={"primary"}> Concluir </Button>
+  </div>
+  }
+  {step === 1 && <div>
+    <p>Content step 2 </p>
+    <Button 
+      onClick={() => setStep(2)}  
+      type={"button"} 
+      color={"primary"}> Concluir </Button>
+  </div>
+  }
+  {step === 2 && <div>
+    <p>Content step 3</p>
+    <Button 
+      onClick={()=>{ setAllCompleted(true); setStep(-1)}}
+      type={"button"} 
+      color={"primary"}> Concluir </Button>
+  </div>
+  }
+
+  {allCompleted && <div>
+    <p>Todos os passos estão completos</p>
+  </div>}
+  </>
+}
+```
