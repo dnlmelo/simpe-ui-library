@@ -1,5 +1,6 @@
-@use '../../foundation/index' as foundation;
-
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
 .textLink {
     cursor: pointer;
     font-family: Lato;
@@ -21,21 +22,21 @@
 }
 
 .textLink--color-primary{
-    color: foundation.$color-product-normal
+    color: $color-product-normal
 }
 
 .textLink--color-info{
-    color: foundation.$color-blue-normal
+    color: $color-blue-normal
 }
 
 .textLink--color-critical{
-    color: foundation.$color-red-normal
+    color: $color-red-normal
 }
 
 .textLink--color-success{
-    color: foundation.$color-green-normal
+    color: $color-green-normal
 }
 
 .textLink--color-normal{
-    color: foundation.$color-ink-dark
+    color: $color-ink-dark
 }

@@ -1,4 +1,6 @@
-@use '../../foundation/index.scss' as foundation;
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
 
 .input{
     display: inline-block;
@@ -7,16 +9,16 @@
 .input {
     input, select, textarea{
         border-radius: 3px;
-        border: 1px solid foundation.$color-cloud-dark;
+        border: 1px solid $color-cloud-dark;
         background: #fff;
-        color: foundation.$color-ink-dark;
+        color: $color-ink-dark;
         
         &::placeholder{
-            color: foundation.$color-ink-light
+            color: $color-ink-light
         }
         
         &:disabled{
-            background-color: foundation.$color-cloud-normal;
+            background-color: $color-cloud-normal;
         }
          
     }
@@ -31,12 +33,12 @@
         margin-bottom: 5px;
         font-weight: 600;
         text-transform: capitalize;
-        color: foundation.$color-ink-dark;
+        color: $color-ink-dark;
     }
 }
 .input-size-sm{
     label, input, select, textarea{
-        font-size: foundation.$size-small;
+        font-size: $size-small;
     }
     input, select{
         padding: 10px;
@@ -45,7 +47,7 @@
 
 .input-size-md{
     label, input, select, textarea{
-        font-size: foundation.$size-normal;
+        font-size: $size-normal;
     }
     input, select{
         padding: 12px;
@@ -54,7 +56,7 @@
 
 .input-size-lg{
     label, input, select, textarea{
-        font-size: foundation.$size-large;
+        font-size: $size-large;
     }
     input, select{
         padding: 14px;
@@ -62,12 +64,12 @@
 }
 
 .error-msg{
-    font-size: foundation.$size-small;
-    color: foundation.$color-red-normal;
+    font-size: $size-small;
+    color: $color-red-normal;
 }
 
 .input-error input, select{
-    border-color: foundation.$color-red-normal
+    border-color: $color-red-normal
 }
 
 

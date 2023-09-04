@@ -1,4 +1,6 @@
-@use '../../foundation/index' as foundation;
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
 
 .button-base{
     cursor: pointer;
@@ -20,188 +22,188 @@
 .button-size-small{
     padding: 12px;
     gap: 8px; 
-    font-size: foundation.$size-small
+    font-size: $size-small
 }
 
 .button-size-normal{
     padding: 12px 16px;
     gap: 12px; 
-    font-size: foundation.$size-normal
+    font-size: $size-normal
 }
 
 .button-size-large{
     gap: 12px; 
     padding: 14px 24px;
-    font-size: foundation.$size-large
+    font-size: $size-large
 }
 
 .button-size-extralarge{
     gap: 12px; 
     padding: 16px 32px;
-    font-size: foundation.$size-extralarge
+    font-size: $size-extralarge
 }
 
 .button-color-primary{
-    background-color: foundation.$color-product-normal;
-    border: 1px solid foundation.$color-product-normal;
+    background-color: $color-product-normal;
+    border: 1px solid $color-product-normal;
     color: white;
 
     &:hover{
-        background-color: foundation.$color-product-normal-hover
+        background-color: $color-product-normal-hover
     }
     &:active{
-        background-color: foundation.$color-product-normal-active
+        background-color: $color-product-normal-active
     }
 }
 
 .button-color-white{
-    background-color: foundation.$color-white;
-    color: foundation.$color-ink-dark;
-    border: 1px solid foundation.$color-cloud-dark;
+    background-color: $color-white;
+    color: $color-ink-dark;
+    border: 1px solid $color-cloud-dark;
     
     &:hover{
-        background-color: foundation.$color-white-hover
+        background-color: $color-white-hover
     }
     &:active{
-        background-color: foundation.$color-white-active
+        background-color: $color-white-active
     }
 }
 
 .button-color-primary-light{
-    background-color: foundation.$color-product-light;
-    color: foundation.$color-product-dark;
-    border: 1px solid foundation.$color-product-dark;
+    background-color: $color-product-light;
+    color: $color-product-dark;
+    border: 1px solid $color-product-dark;
 
     &:hover{
-        background-color: foundation.$color-product-light-hover
+        background-color: $color-product-light-hover
     }
     &:active{
-        background-color: foundation.$color-product-light-active
+        background-color: $color-product-light-active
     }
 }
 
 .button-color-critical{
-    background-color: foundation.$color-red-normal;
-    color: foundation.$color-white;
+    background-color: $color-red-normal;
+    color: $color-white;
     
     &:hover{
-        background-color: foundation.$color-red-normal-hover
+        background-color: $color-red-normal-hover
     }
     &:active{
-        background-color: foundation.$color-red-normal-active
+        background-color: $color-red-normal-active
     }
 }
 
 .button-color-critical-light{
-    background-color: foundation.$color-red-light;
-    color: foundation.$color-red-dark;
-    border: 1px solid foundation.$color-red-dark;
+    background-color: $color-red-light;
+    color: $color-red-dark;
+    border: 1px solid $color-red-dark;
 
     &:hover{
-        background-color: foundation.$color-red-light-hover
+        background-color: $color-red-light-hover
     }
     &:active{
-        background-color: foundation.$color-red-light-active
+        background-color: $color-red-light-active
     }
 }
 
 .button-color-critical{
-    background-color: foundation.$color-red-normal;
-    color: foundation.$color-white;
-    border: 1px solid foundation.$color-red-normal;
+    background-color: $color-red-normal;
+    color: $color-white;
+    border: 1px solid $color-red-normal;
     
     &:hover{
-        background-color: foundation.$color-red-normal-hover
+        background-color: $color-red-normal-hover
     }
 
     &:active{
-        background-color: foundation.$color-red-normal-active
+        background-color: $color-red-normal-active
     }
 }
 
 .button-color-info{
-    background-color: foundation.$color-blue-normal;
-    border: 1px solid foundation.$color-blue-normal;
-    color: foundation.$color-white;
+    background-color: $color-blue-normal;
+    border: 1px solid $color-blue-normal;
+    color: $color-white;
     
     &:hover{
-        background-color: foundation.$color-blue-normal-hover
+        background-color: $color-blue-normal-hover
     }
     
     &:active{
-        background-color: foundation.$color-blue-normal-active
+        background-color: $color-blue-normal-active
     }
 }
 
 .button-color-info-light{
-    background-color: foundation.$color-blue-light;
-    color: foundation.$color-blue-dark;
-    border: 1px solid foundation.$color-blue-dark;
+    background-color: $color-blue-light;
+    color: $color-blue-dark;
+    border: 1px solid $color-blue-dark;
     
     &:hover{
-        background-color: foundation.$color-blue-light-hover
+        background-color: $color-blue-light-hover
     }
     
     &:active{
-        background-color: foundation.$color-blue-light-active
+        background-color: $color-blue-light-active
     }
 }
 
 .button-color-success{
-    background-color: foundation.$color-green-normal;
-    color: foundation.$color-white;
-    border: 1px solid foundation.$color-green-normal;
+    background-color: $color-green-normal;
+    color: $color-white;
+    border: 1px solid $color-green-normal;
 
     &:hover{
-        background-color: foundation.$color-green-normal-hover
+        background-color: $color-green-normal-hover
     }
     
     &:active{
-        background-color: foundation.$color-green-normal-active
+        background-color: $color-green-normal-active
     }
 }
 
 .button-color-success-light{
-    background-color: foundation.$color-green-light;
-    color: foundation.$color-green-normal;
-    border: 1px solid foundation.$color-green-normal;
+    background-color: $color-green-light;
+    color: $color-green-normal;
+    border: 1px solid $color-green-normal;
 
     &:hover{
-        background-color: foundation.$color-green-light-hover
+        background-color: $color-green-light-hover
     }
     
     &:active{
-        background-color: foundation.$color-green-light-active
+        background-color: $color-green-light-active
     }
 }
 
 .button-color-attention-light{
-    background-color: foundation.$color-orange-light;
-    color: foundation.$color-orange-dark;
-    border: 1px solid foundation.$color-orange-dark;
+    background-color: $color-orange-light;
+    color: $color-orange-dark;
+    border: 1px solid $color-orange-dark;
     
     &:hover{
-        background-color: foundation.$color-orange-light-hover
+        background-color: $color-orange-light-hover
     }
     
     &:active{
-        background-color: foundation.$color-orange-light-active
+        background-color: $color-orange-light-active
     }
 }
 .button-color-attention{
-    background-color: foundation.$color-orange-normal;
-    color: foundation.$color-white;
-    border: 1px solid foundation.$color-orange-normal;
+    background-color: $color-orange-normal;
+    color: $color-white;
+    border: 1px solid $color-orange-normal;
 
     &:hover{
-        background-color: foundation.$color-orange-normal-hover
+        background-color: $color-orange-normal-hover
     }
     
     &:active{
-        background-color: foundation.$color-orange-normal-active
+        background-color: $color-orange-normal-active
     }
 }
 
 .button-elevation-1{
-    @include foundation.elevation-1;
+    @include elevation-1;
 }

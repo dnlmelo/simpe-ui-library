@@ -1,4 +1,4 @@
-@use '../../foundation/index' as foundation;
+@import '../../foundation/colors';
 
 .collapse {
     background-color: white;
@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     text-transform: capitalize;
-    border-bottom: 1px solid foundation.$color-cloud-normal;
+    border-bottom: 1px solid $color-cloud-normal;
 }
 
 .collapse-body{

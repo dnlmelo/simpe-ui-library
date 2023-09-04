@@ -1,16 +1,19 @@
-@use '../../foundation/index' as foundation;
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
+@import '../../foundation/utils';
 
 .tooltip {
     padding: 12px;
     color: white;
-    font-size: foundation.$size-small;
+    font-size: $size-small;
     font-weight: 600;
     line-height: 1rem;
     border-radius: 5px;
     max-width: 300px;
     position: absolute;
-    background: foundation.$color-info;
-    @include foundation.elevation-2;
+    background: $color-info;
+    @include elevation-2;
 
     &:after{
         content: '';
@@ -22,15 +25,15 @@
     }
 }
 .tooltip-color-info{
-    background: foundation.$color-info;
+    background: $color-info;
 }
 
 .tooltip-color-error{
-    background: foundation.$color-error;
+    background: $color-error;
 }
 
 .tooltip-color-success{
-    background: foundation.$color-success;
+    background: $color-success;
 }
 
 .tooltip-position--top-center,
@@ -38,18 +41,18 @@
 .tooltip-position--top-right{
     &:after{
         bottom: -4px;
-        @include foundation.arrow-down;
+        @include arrow-down;
     }
     &.tooltip-color-info:after{
-        border-top-color: foundation.$color-info;
+        border-top-color: $color-info;
     }
     
     &.tooltip-color-error:after{
-        border-top-color: foundation.$color-error;
+        border-top-color: $color-error;
     }
     
     &.tooltip-color-success:after{
-        border-top-color: foundation.$color-success;
+        border-top-color: $color-success;
     }
 }
 
@@ -58,18 +61,18 @@
 .tooltip-position--bottom-right{
     &:after{
         top: -4px;
-        @include foundation.arrow-up;
+        @include arrow-up;
     }
     &.tooltip-color-info:after{
-        border-bottom-color: foundation.$color-info;
+        border-bottom-color: $color-info;
     }
     
     &.tooltip-color-error:after{
-        border-bottom-color: foundation.$color-error;
+        border-bottom-color: $color-error;
     }
     
     &.tooltip-color-success:after{
-        border-bottom-color: foundation.$color-success;
+        border-bottom-color: $color-success;
     }
 }
 

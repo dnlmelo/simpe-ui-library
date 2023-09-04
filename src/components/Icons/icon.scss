@@ -1,7 +1,9 @@
-@use '../../foundation/index' as foundation;
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
 
 .icon{
-    color: foundation.$color-ink-normal;
+    color: $color-ink-normal;
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -30,21 +32,21 @@
 }
 
 .icon-color-success{
-    background: foundation.$color-success;
+    background: $color-success;
     color: white;
 }
 
 .icon-color-error{
-    background: foundation.$color-error;
+    background: $color-error;
     color: white;
 }
 
 .icon-color-info{
-    background: foundation.$color-info;
+    background: $color-info;
     color: white;
 }
 
 .icon-color-attention{
-    background: foundation.$color-orange-normal;
+    background: $color-orange-normal;
     color: white;
 }

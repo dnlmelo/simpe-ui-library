@@ -1,5 +1,6 @@
-@use '../../foundation/index' as foundation;
-
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
 .keyValue {
     display: inline-flex;
     flex-direction: column;
@@ -7,28 +8,28 @@
 
     &.keyValue-size--md{
         .keyText{
-            font-size: foundation.$size-small;
+            font-size: $size-small;
         }
         .valueText{
-            font-size: foundation.$size-normal;
+            font-size: $size-normal;
         }
     }
 
     &.keyValue-size--lg{
         .keyText{
-            font-size: foundation.$size-normal;
+            font-size: $size-normal;
         }
         .valueText{
-            font-size: foundation.$size-large;
+            font-size: $size-large;
         }
     }
 }
 
 .valueText{
-    color: foundation.$color-ink-dark;
+    color: $color-ink-dark;
     font-weight: 600;
 }
 
 .keyText{
-    color: foundation.$color-ink-normal;
+    color: $color-ink-normal;
 }

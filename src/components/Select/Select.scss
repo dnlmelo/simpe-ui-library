@@ -1,4 +1,6 @@
-@use '../Inputs/Input-base.scss';
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
 
 .select select{
     -webkit-appearance: none;
