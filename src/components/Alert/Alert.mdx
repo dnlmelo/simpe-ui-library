@@ -1,0 +1,37 @@
+{/* Alert.mdx */}
+
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks';
+
+import * as Alert from './Alert.stories';
+
+<Meta of={Alert} />
+
+# Alert
+Componente utilizado como feedback de ação ou para mensagens com o sentido de alerta sobre o conteúdo da página 
+
+<Canvas of={Alert.Default}> </Canvas>
+
+<Controls />
+
+## Components filhos
+O conteúdo do Alert deve ser populado com os components próprios do Alert. Veja abaixo os components apropriados:
+- `<AlertTitle>`: Component que renderiza o título do Alert
+- `<AlertDescription>`: Component que renderiza o conteúdo descritivo do Alert. Somente deve ser usado no modo `block`. Aceita qualquer tipo de conteúdo. 
+No entanto, utilize apenas com textos curtos e alguns links caso necessário.
+- `<AlertActionPrimary>`: Component de ação primaria do Alert. 
+- `<AlertActionSecondary>`: Component de ação secundária do Alert. 
+
+
+## Exemplo de uso
+
+<Canvas of={Alert.Default}> </Canvas>
+```jsx
+function Component(props:any){
+   return <Alert>
+    <AlertTitle>Title</AlertTitle>
+     <AlertDescription>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti labore rem nihil, aspernatur quo iusto a neque velit nulla eos quasi beatae laboriosam deserunt inventore enim ut odit consectetur quidem.</AlertDescription>
+     <AlertActionPrimary>Primary</AlertActionPrimary>
+     <AlertActionSecondary>Secondary</AlertActionSecondary>
+  <Alert/>
+}
+```

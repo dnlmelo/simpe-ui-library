@@ -1,0 +1,103 @@
+@import '../Button/Button';
+@import '../../foundation/colors';
+
+.alert {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    gap: 16px;
+    border-left: 3px solid;
+    color: $color-ink-dark;
+
+    &.alert-mode-inline {
+        align-items: center;
+        .alert-content{
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .alert-title{
+                flex-grow: 1;
+                margin-bottom: 0;
+                margin-right: 16px;
+            }
+            .alert-description{
+                display: none;
+            }
+        }
+    }
+}
+
+.alert-action-primary, .alert-action-secondary{
+    @extend .button-base;
+    @extend .button-size-small;
+    margin-right: 12px;
+}
+
+.alert-info{
+    border-left-color: $color-info;
+    background-color: $color-blue-light;
+
+    .icon,
+    .alert-action-primary{
+        @extend .button-color-info;
+    }
+
+    .alert-action-secondary{
+        @extend .button-color-info-light;
+    }
+}
+
+.alert-error{
+    border-left-color: $color-error;
+    background-color: $color-red-light;
+    .icon,
+    .alert-action-primary{
+        @extend .button-color-critical;
+    }
+
+    .alert-action-secondary{
+        @extend .button-color-critical-light;
+    }
+}
+
+.alert-success{
+    border-left-color: $color-success;
+    background-color: $color-green-light;
+
+    .icon,
+    .alert-action-primary{
+        @extend .button-color-success;
+    }
+
+    .alert-action-secondary{
+        @extend .button-color-success-light;
+    }
+}
+
+.alert-attention{
+    border-left-color: $color-orange-normal;
+    background-color: $color-orange-light;
+
+    .icon,
+    .alert-action-primary{
+        @extend .button-color-attention;
+    }
+
+    .alert-action-secondary{
+        @extend .button-color-attention-light;
+    }
+}
+
+.alert-title{
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+.alert-description{
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
