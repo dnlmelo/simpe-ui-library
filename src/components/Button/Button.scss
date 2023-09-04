@@ -43,6 +43,7 @@
 
 .button-color-primary{
     background-color: foundation.$color-product-normal;
+    border: 1px solid foundation.$color-product-normal;
     color: white;
 
     &:hover{
@@ -107,6 +108,7 @@
 .button-color-critical{
     background-color: foundation.$color-red-normal;
     color: foundation.$color-white;
+    border: 1px solid foundation.$color-red-normal;
     
     &:hover{
         background-color: foundation.$color-red-normal-hover
@@ -119,6 +121,7 @@
 
 .button-color-info{
     background-color: foundation.$color-blue-normal;
+    border: 1px solid foundation.$color-blue-normal;
     color: foundation.$color-white;
     
     &:hover{
@@ -147,7 +150,8 @@
 .button-color-success{
     background-color: foundation.$color-green-normal;
     color: foundation.$color-white;
-    
+    border: 1px solid foundation.$color-green-normal;
+
     &:hover{
         background-color: foundation.$color-green-normal-hover
     }
@@ -159,15 +163,42 @@
 
 .button-color-success-light{
     background-color: foundation.$color-green-light;
-    color: foundation.$color-green-dark;
-    border: 1px solid foundation.$color-green-dark;
-    
+    color: foundation.$color-green-normal;
+    border: 1px solid foundation.$color-green-normal;
+
     &:hover{
         background-color: foundation.$color-green-light-hover
     }
     
     &:active{
         background-color: foundation.$color-green-light-active
+    }
+}
+
+.button-color-attention-light{
+    background-color: foundation.$color-orange-light;
+    color: foundation.$color-orange-dark;
+    border: 1px solid foundation.$color-orange-dark;
+    
+    &:hover{
+        background-color: foundation.$color-orange-light-hover
+    }
+    
+    &:active{
+        background-color: foundation.$color-orange-light-active
+    }
+}
+.button-color-attention{
+    background-color: foundation.$color-orange-normal;
+    color: foundation.$color-white;
+    border: 1px solid foundation.$color-orange-normal;
+
+    &:hover{
+        background-color: foundation.$color-orange-normal-hover
+    }
+    
+    &:active{
+        background-color: foundation.$color-orange-normal-active
     }
 }
 
