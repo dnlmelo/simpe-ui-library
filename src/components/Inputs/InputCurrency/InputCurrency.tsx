@@ -7,7 +7,7 @@ import IntlCurrencyInput from 'react-intl-currency-input';
 import { currencyMask } from './CurrencyMaskConfig';
 
 const InputCurrency: FC<InputCurrencyProps> = (props) => {
-  const { error, label, infoMessage, errorMessage, size, defaulValue = 0, value = 0, ...res} = props
+  const { error, label, infoMessage, errorMessage, size, value, ...res} = props
   const classes = `input input-size-${size} ${error? 'input-error': ''}`
 
   if(props.value && props.max > 0 && Number(props.value) > props.max){
@@ -28,7 +28,7 @@ const InputCurrency: FC<InputCurrencyProps> = (props) => {
 
     <IntlCurrencyInput currency="BRL" config={{ locale: 'pt-BR', ...currencyMask }} 
       {...res}
-      defaultValue={defaulValue}
+      defaultValue={value}
     />
 
     {errorMessage && error? 

@@ -5,6 +5,6 @@ export interface InputCurrencyProps extends InputProps{
   max: number
 
   /** Valor inicial do input, se não for passado, inciará com 0 (R$0,00)*/
-  defaulValue?:number
+  value?:number
 }
   
