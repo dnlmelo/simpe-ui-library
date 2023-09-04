@@ -1,0 +1,45 @@
+{/* Table.mdx */}
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks';
+
+import * as TableStories from './Table.stories';
+
+# Table
+Tendo em vista a simplicidade da implementação de tabelas na marcação html.
+A tag `table` pode ser utilizada nativamente. Sem a necessidade de criar código apenas para um 'wrapper' de component React.
+Para utilizar os estilos de tabela, basta adicionar as classes nos components.
+<Canvas of={TableStories.Default}></Canvas>
+
+## Exemplo de uso
+Importe o estilo de Table no seu component
+
+```js
+import './Table.scss';
+
+function MyTable(){
+  return <table className="table table-stripped">
+  <thead>
+    <th>col 1 <Icon name="arrow-up" size={"md"}></Icon></th>
+    <th>col 2 <Icon name="arrow-up" size={"md"}></Icon></th>
+    <th>col 3 <Icon name="arrow-up" size={"md"}></Icon></th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell 1</td>
+      <td>cell 2</td>
+      <td>cell 3</td>
+    </tr>
+    <tr>
+      <td>cell 1</td>
+      <td>cell 2</td>
+      <td>cell 3</td>
+    </tr>
+  </tbody>
+</table>
+}
+```
+
+### Classes disponíveis
+#### Tag `table`
+- `table` (obrigatório): classe com o escopo dos estilo da tabela.
+- `table-stripped` (opcional): Opcionalmente adiciona um estilo "zebra" nas linhas
+- `table-align-(left | center | right)` (opcional): Alinha o conteúdo. O padrão é alinhamento à esquerda
