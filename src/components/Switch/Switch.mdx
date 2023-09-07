@@ -1,0 +1,28 @@
+{/* Switch.mdx */}
+
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks';
+
+import * as SwitchStories from './Switch.stories';
+
+<Meta of={SwitchStories} />
+
+# Switch
+Componente para demonstrar o conteúdo de uma página em seções de jornada. 
+Não faz o gerenciamento do estado do conteúdo (show/hide). Veja o exemplo de uso.
+
+<Canvas of={SwitchStories.Default}> </Canvas>
+
+<Controls />
+
+## Exemplo de uso
+
+<Canvas of={SwitchStories.Exemple} sourceState="hidden"> </Canvas>
+```jsx
+function Component(){
+  const [on, setOn] = useState(false)
+  return <>
+    <Switch checked={on} onChange={(checked)=>setOn(checked)}>Modo Avião</Switch>
+    {on && <p>Todas suas notificação estão desativadas</p>}
+  </>
+}
+```
