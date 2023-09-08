@@ -6,14 +6,4 @@
 @import 'elevations';
 @import 'sizes';
 @import 'utils';
-
-:root{
-    position: relative;
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    color: $color-ink-normal;
-    background: #F5F5F5;
-    font-size: $size-normal;
-    &, *{
-        box-sizing: border-box;
-    }
-}
+@import 'base';

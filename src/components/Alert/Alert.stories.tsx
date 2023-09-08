@@ -15,7 +15,7 @@ export const Default: Story = {
     mode: 'block',
     children: <>
      <AlertTitle>Title</AlertTitle>
-     <AlertDescription>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti labore rem nihil, aspernatur quo iusto a neque velit nulla eos quasi beatae laboriosam deserunt inventore enim ut odit consectetur quidem.</AlertDescription>
+     <AlertDescription><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati aperiam nulla eos a voluptate, voluptas consequatur modi, quo debitis, ipsa saepe. Architecto natus consequuntur, distinctio eos optio expedita a harum!</p></AlertDescription>
      <AlertActionPrimary>Primary</AlertActionPrimary>
      <AlertActionSecondary>Secondary</AlertActionSecondary>
     </>

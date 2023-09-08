@@ -1,0 +1,41 @@
+@import 'typography';
+@import 'sizes';
+
+:root{
+    position: relative;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    color: $color-ink-normal;
+    background: #F5F5F5;
+    font-size: $size-large;
+    margin: 0px;
+    padding: 0px;
+
+    *{
+        box-sizing: border-box;
+    }
+}
+
+h1{
+    @include title-1;
+}
+
+h2{
+    @include title-2;
+}
+
+h3{
+    @include title-3;
+}
+
+h4{
+    @include title-4;
+}
+
+h5{
+    @include title-5;
+}
+
+h1, h2, h3, h4, h5, a, p{
+    line-height: 1.5em;
+    margin: 0
+}

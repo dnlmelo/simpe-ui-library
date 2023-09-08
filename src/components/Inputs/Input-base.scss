@@ -24,12 +24,12 @@
     }
     .icon{
         margin-right: 5px;
-        vertical-align: middle;
     }
 
     
     label{
-        display: block;
+        display: flex;
+        align-items: center;
         margin-bottom: 5px;
         font-weight: 600;
         text-transform: capitalize;

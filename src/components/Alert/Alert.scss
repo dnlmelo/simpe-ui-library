@@ -12,6 +12,7 @@
 
     &.alert-mode-inline {
         align-items: center;
+        
         .alert-content{
             display: flex;
             align-items: center;
@@ -31,7 +32,7 @@
 
 .alert-action-primary, .alert-action-secondary{
     @extend .button-base;
-    @extend .button-size-small;
+    @extend .button-size-sm;
     margin-right: 12px;
 }
 
@@ -92,12 +93,10 @@
 
 .alert-title{
     font-weight: 700;
-    line-height: 20px;
-    margin-bottom: 4px;
 }
 
 .alert-description{
     font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 12px;
+    margin: 12px 0;
+    font-size: $size-normal;
 }
