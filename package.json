@@ -7,7 +7,6 @@
     "README.md"
   ],
   "outputDir": "./dist",
-  "private": true,
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
@@ -105,5 +104,8 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "fontawesome": "^5.6.3",
     "react-intl-currency-input": "^0.3.3"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
