@@ -77,7 +77,6 @@ jobs:
       - run: npm run semantic-release
         env:
           CI: true
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: npm publish
