@@ -1,0 +1,231 @@
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100px;
+    padding: 12px;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+
+    .icon{
+        color: inherit;
+    }
+}
+
+.dropdown-color-default .dropdown-button{
+    border: 1px solid $color-cloud-dark;
+}
+
+.dropdown-color-primary .dropdown-button{
+    background-color: $color-product-normal;
+    color: white;
+
+    &:hover{
+        background-color: $color-product-normal-hover
+    }
+    &:active{
+        background-color: $color-product-normal-active
+    }
+}
+
+.dropdown-color-white .dropdown-button {
+    background-color: $color-white;
+    color: $color-ink-dark;
+    border: 1px solid $color-cloud-dark;
+    
+    &:hover{
+        background-color: $color-white-hover
+    }
+    &:active{
+        background-color: $color-white-active
+    }
+}
+
+.dropdown-color-primary-light .dropdown-button {
+    background-color: $color-product-light;
+    color: $color-product-dark;
+    border: 1px solid $color-product-dark;
+
+    &:hover{
+        background-color: $color-product-light-hover
+    }
+    &:active{
+        background-color: $color-product-light-active
+    }
+}
+
+.dropdown-color-critical .dropdown-button{
+    background-color: $color-red-normal;
+    color: $color-white;
+    
+    &:hover{
+        background-color: $color-red-normal-hover
+    }
+    &:active{
+        background-color: $color-red-normal-active
+    }
+}
+
+.dropdown-color-critical-light .dropdown-button{
+    background-color: $color-red-light;
+    color: $color-red-dark;
+    border: 1px solid $color-red-dark;
+
+    &:hover{
+        background-color: $color-red-light-hover
+    }
+    &:active{
+        background-color: $color-red-light-active
+    }
+}
+
+.dropdown-color-critical .dropdown-button{
+    background-color: $color-red-normal;
+    color: $color-white;
+    
+    &:hover{
+        background-color: $color-red-normal-hover
+    }
+
+    &:active{
+        background-color: $color-red-normal-active
+    }
+}
+
+.dropdown-color-info .dropdown-button{
+    background-color: $color-blue-normal;
+    color: $color-white;
+    
+    &:hover{
+        background-color: $color-blue-normal-hover
+    }
+    
+    &:active{
+        background-color: $color-blue-normal-active
+    }
+}
+
+.dropdown-color-info-light .dropdown-button{
+    background-color: $color-blue-light;
+    color: $color-blue-dark;
+    border: 1px solid $color-blue-dark;
+    
+    &:hover{
+        background-color: $color-blue-light-hover
+    }
+    
+    &:active{
+        background-color: $color-blue-light-active
+    }
+}
+
+.dropdown-color-success .dropdown-button{
+    background-color: $color-green-normal;
+    color: $color-white;
+    
+    &:hover{
+        background-color: $color-green-normal-hover
+    }
+    
+    &:active{
+        background-color: $color-green-normal-active
+    }
+}
+
+.dropdown-color-success-light .dropdown-button{
+    background-color: $color-green-light;
+    color: $color-green-dark;
+    border: 1px solid $color-green-dark;
+    
+    &:hover{
+        background-color: $color-green-light-hover
+    }
+    
+    &:active{
+        background-color: $color-green-light-active
+    }
+}
+
+.dropdown-itens {
+    list-style: none;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 5px;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    top: 102%;
+    border: 1px solid $color-cloud-dark;
+    @include elevation-1;
+
+    &[aria-hidden=false]{
+        display: block;
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    .textLink{
+        width: 100%;
+        display: flex;
+        padding: 3px 10px;
+        justify-content: space-between;
+        text-decoration: none;
+
+        .icon{
+            vertical-align: middle;
+            height: auto;
+            width: auto;
+        }
+
+        &:hover{
+            background-color: $color-cloud-light;
+        }
+    }
+}
+
+
+.dropdown-size-sm{
+    .dropdown-button{
+        padding: 10px;
+    }
+    .dropdown-button, .textLink{
+        font-size: $size-small;
+    }
+}
+
+.dropdown-size-md{
+    .dropdown-button{
+        padding: 12px;
+    }
+
+    .dropdown-button, .textLink{
+        font-size: $size-normal;
+    }
+}
+
+.dropdown-size-lg{
+    .dropdown-button{
+        padding: 14px;
+    }
+
+    .dropdown-button, .textLink{
+        font-size: $size-large;
+    }
+}

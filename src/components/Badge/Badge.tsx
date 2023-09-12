@@ -3,10 +3,11 @@ import './Badge.scss';
 import { BadgeProps } from './Badge.types';
 
 const Badge:FC<BadgeProps> = (props) => {
-  const size = 'badge-size-'.concat(props.scale? props.scale : 'normal')
-  
+  const size = `badge-size-${props.size || 'sm'}`
+  const classes = `badge-base ${size} badge-color-${props.color}`; 
+
   return(
-    <div className={`badge-base ${size} badge-color-${props.color}`} data-testid="Badge">
+    <div className={classes} data-testid="Badge">
       {props.text}
     </div>
     )

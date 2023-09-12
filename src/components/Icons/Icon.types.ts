@@ -6,7 +6,7 @@ export interface IconProps{
     name: string
 
     /** cor de fundo para o ícone */
-    color?: 'info'|'error'|'success'
+    color?: 'info'|'error'|'success'|'attention'
 
     /** Tamanho do ícone */
     size: 'sm'| 'md'| 'lg'

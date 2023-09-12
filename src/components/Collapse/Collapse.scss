@@ -1,4 +1,4 @@
-@use '../../foundation/index' as foundation;
+@import '../../foundation/colors';
 
 .collapse {
     background-color: white;
@@ -8,20 +8,22 @@
 .collapse-header{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid foundation.$color-cloud-normal;
+    align-items: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid $color-cloud-normal;
 }
 
 .collapse-body{
-    padding: 1rem;
-
+    margin-top: 1rem;
+    
     &[data-collapsed=true]{
         overflow: hidden;
-        padding: 0;
         height: 0;
+        transition: height .35s ease;
     }
 
     &[data-collapsed=false]{
-        overflow: auto;
         height: auto;
+
     }
 }

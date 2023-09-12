@@ -1,0 +1,38 @@
+{/* Tab.mdx */}
+
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks';
+
+import * as TabStories from './Tab.stories';
+
+<Meta of={TabStories} />
+
+# Tab
+Utilizado para separar o conteúdo de uma página em seções de contexto. O Component Tab é somente como um marcador. 
+Não faz o gerenciamento do estado do conteúdo (show/hide). Veja o exemplo de uso.
+
+<Canvas of={TabStories.Default}> </Canvas>
+
+*Os controles abaixo não são dinâmicos para este exemplo.*
+<Controls />
+
+## Exemplo de uso
+```jsx
+function Component(props:any){
+  //Controle do estado do conteúdo (show/hide)
+  const [active, setActive] = useState('tab1')
+
+  return (<>
+  <div>
+    <Tab active={active === 'tab1'} label={'Tab1'} onActive={()=>setActive('tab1')}></Tab>
+    <Tab active={active === 'tab2'} label={'Tab2'} onActive={()=>setActive('tab2')}></Tab>
+    <Tab active={active === 'tab3'} label={'Tab3'} onActive={()=>setActive('tab3')}></Tab>
+  </div>
+
+  <div>
+    {active === 'tab1' && <CardSection> Content tab 1 </CardSection>}
+    {active === 'tab2' && <CardSection> Content tab 2 </CardSection>}
+    {active === 'tab3' && <CardSection> Content tab 3 </CardSection>}
+  </div>
+  </>)
+}
+```

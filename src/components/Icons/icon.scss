@@ -1,40 +1,52 @@
-@use '../../foundation/index' as foundation;
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
 
 .icon{
-    color: foundation.$color-ink-normal;
-    padding: 2px;
+    color: $color-ink-normal;
     width: 14px;
-    display: inline-block;
     height: 14px;
+    display: inline-block;
     border-radius: 50%;
     text-align: center;
     font-weight: bold;
-    vertical-align: bottom;
 }
 
 .icon-size-sm{
-    font-size: 10px
+    font-size: 10px;
+    line-height: 1.2;
 }
 
 .icon-size-md{
-    font-size: 14px
+    font-size: 14px;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.3;
 }
 
 .icon-size-lg{
-    font-size: 18px
+    font-size: 18px;
+    width: 2em;
+    height: 2em;
+    line-height: 1.7;
 }
 
 .icon-color-success{
-    background: foundation.$color-success;
+    background: $color-success;
     color: white;
 }
 
 .icon-color-error{
-    background: foundation.$color-error;
+    background: $color-error;
     color: white;
 }
 
 .icon-color-info{
-    background: foundation.$color-info;
+    background: $color-info;
+    color: white;
+}
+
+.icon-color-attention{
+    background: $color-orange-normal;
     color: white;
 }

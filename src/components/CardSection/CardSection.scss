@@ -1,9 +1,8 @@
-@use '../../foundation/index' as foundation;
+@import '../../foundation/elevations';
 
 .cardSection {
-    font-family: Lato;
     padding: 12px 14px;
     border-radius: 5px;
     background: #FFF;
-    @include foundation.elevation-1
+    @include elevation-1
 }

@@ -1,0 +1,63 @@
+@import '../../foundation/colors';
+
+.steps {
+    width: 100%;
+    display: flex;
+}
+
+.step{
+    text-align: center;
+    width: 100%;
+    position: relative; 
+    z-index: 2;
+    min-width: 100px;
+    
+    &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        border: 1px solid #ccc;
+        width: 100%;
+        top: 14px;
+        z-index: 1;
+    } 
+
+    &[data-actived=true]{
+        &:before{
+            border-color: $color-ink-dark
+        }
+        .step-count{
+            background: $color-ink-normal;
+            color: white;
+        }
+    }
+
+    &[data-completed=true]{
+        &:before{
+            border-color: $color-product-normal;
+        }
+        .step-count{
+            background: $color-product-normal;
+            color: white;
+        }
+    }
+}
+
+.step-count{
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: $color-cloud-normal;
+    display: inline-block;
+}
+
+.step-label{
+    display: block;
+    color: $color-ink-normal;
+    font-weight: bold;
+    margin-top: 5px;
+}

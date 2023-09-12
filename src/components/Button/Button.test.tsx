@@ -31,17 +31,16 @@ describe("Button test", () => {
    
   })
 
-  describe('scale attr', ()=>{
-    const btTypes:ButtonProps["scale"][] =[
-      'extralarge',
-      'large',
-      'normal',
-      'small'
+  describe('check size attr', ()=>{
+    const btTypes:ButtonProps["size"][] =[
+      'sm',
+      'md',
+      'lg',
     ];
 
     btTypes.forEach((v)=>{
       test(`should render button with ${v} scale`, () => {
-        render(<Button type="button" color="primary" scale={v}>Button</Button>)
+        render(<Button type="button" color="primary" size={v}>Button</Button>)
         expect(screen.getByRole('button').getAttribute(`button-size-${v}`)).toBeDefined()
       }); 
     })

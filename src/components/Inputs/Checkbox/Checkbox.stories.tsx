@@ -13,5 +13,8 @@ export default meta;
 export const Default: Story = {
   args: {
     label: 'Label',
+    infoMessage: 'info',
+    error: true,
+    errorMessage: 'error'
   },
 };

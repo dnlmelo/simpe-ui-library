@@ -20,8 +20,8 @@ describe('<InputCurrency />', () => {
     expect(value).toBe('R$0,00');
   });
 
-  test('it should show R$ 1,00', () => {
-    render(<InputCurrency max={0} size={'sm'} value={1}/>);
+  test('it should show R$ 1,00 as inital value', () => {
+    render(<InputCurrency max={2} size={'sm'} value={1}/>);
     const inputCurrency = screen.getByTestId('InputCurrency');
     const value = trimValue(inputCurrency.querySelector('input')!.value)
     expect(value).toBe('R$1,00');

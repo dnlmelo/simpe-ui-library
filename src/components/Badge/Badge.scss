@@ -1,4 +1,6 @@
-@use '../../foundation/index' as foundation;
+@import '../../foundation/colors';
+@import '../../foundation/sizes';
+@import '../../foundation/elevations';
 
 .badge-base{
     font-size: 12px;
@@ -13,72 +15,72 @@
     } 
 }
 
-.badge-size-small{
+.badge-size-sm{
     padding: 4px 8px;
     gap: 8px; 
 }
 
-.badge-size-normal{
+.badge-size-md{
     padding: 6px 10px;
     gap: 12px; 
-    font-size: foundation.$size-normal
+    font-size: $size-normal
 }
 
 .badge-color-primary{
-    background-color: foundation.$color-product-normal;
+    background-color: $color-product-normal;
     color: white;
 }
 
 .badge-color-white{
-    background-color: foundation.$color-white;
-    color: foundation.$color-ink-dark;
-    border: 1px solid foundation.$color-cloud-dark;
+    background-color: $color-white;
+    color: $color-ink-dark;
+    border: 1px solid $color-cloud-dark;
 }
 
 .badge-color-primary-light{
-    background-color: foundation.$color-product-light;
-    color: foundation.$color-product-dark;
-    border: 1px solid foundation.$color-product-dark;
+    background-color: $color-product-light;
+    color: $color-product-dark;
+    border: 1px solid $color-product-dark;
 }
 
 .badge-color-critical{
-    background-color: foundation.$color-red-normal;
-    color: foundation.$color-white;
+    background-color: $color-red-normal;
+    color: $color-white;
 }
 
 .badge-color-critical-light{
-    background-color: foundation.$color-red-light;
-    color: foundation.$color-red-dark;
-    border: 1px solid foundation.$color-red-dark;
+    background-color: $color-red-light;
+    color: $color-red-dark;
+    border: 1px solid $color-red-dark;
 }
 
 .badge-color-critical{
-    background-color: foundation.$color-red-normal;
-    color: foundation.$color-white;
+    background-color: $color-red-normal;
+    color: $color-white;
 }
 
 .badge-color-info{
-    background-color: foundation.$color-blue-normal;
-    color: foundation.$color-white;
+    background-color: $color-blue-normal;
+    color: $color-white;
 }
 
 .badge-color-info-light{
-    background-color: foundation.$color-blue-light;
-    color: foundation.$color-blue-dark;
-    border: 1px solid foundation.$color-blue-dark;
+    background-color: $color-blue-light;
+    color: $color-blue-dark;
+    border: 1px solid $color-blue-dark;
 }
 
 .badge-color-success{
-    background-color: foundation.$color-green-normal;
-    color: foundation.$color-white;
+    background-color: $color-green-normal;
+    color: $color-white;
 }
 
 .badge-color-success-light{
-    background-color: foundation.$color-green-light;
-    color: foundation.$color-green-dark;
-    border: 1px solid foundation.$color-green-dark;
+    background-color: $color-green-light;
+    color: $color-green-dark;
+    border: 1px solid $color-green-dark;
 }
 
 .badge-elevation-1{
-    @include foundation.elevation-1;
+    @include elevation-1;
 }

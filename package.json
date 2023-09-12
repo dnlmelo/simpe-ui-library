@@ -1,13 +1,13 @@
 {
-  "name": "finvity-ui-library",
-  "version": "0.1.0",
+  "name": "@finvity/ui-library",
+  "version": "1.0.1",
+  "license": "UNLICENSED",
   "main": "dist/index.js",
   "files": [
     "dist",
     "README.md"
   ],
   "outputDir": "./dist",
-  "private": true,
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
@@ -15,7 +15,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "cc": "npx generate-react-cli component",
-    "test-pack": "npm pack && cp finvity-ui-library-0.1.0.tgz ../react-cra"
+    "prepublish": "npm run build",
+    "test-pack": "npm pack && cp finvity-ui-library-0.1.0.tgz ../react-cra",
+    "semantic-release": "semantic-release --branches main"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +68,7 @@
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^8.46.0",
+    "semantic-release": "^19.0.3",
     "eslint-config-standard-with-typescript": "^37.0.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-n": "^16.0.1",
@@ -103,6 +106,20 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "fontawesome": "^5.6.3"
+    "fontawesome": "^5.6.3",
+    "react-intl-currency-input": "^0.3.3"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
   }
 }

@@ -1,7 +1,9 @@
 import type { Preview } from "@storybook/react";
+import '../src/foundation/index.scss'
 
 const preview: Preview = {
   parameters: {
+    layout: 'centered',
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
