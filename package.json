@@ -1,6 +1,6 @@
 {
   "name": "@finvity/ui-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "files": [
@@ -15,6 +15,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "cc": "npx generate-react-cli component",
+    "prepublish": "npm run build",
     "test-pack": "npm pack && cp finvity-ui-library-0.1.0.tgz ../react-cra"
   },
   "eslintConfig": {
