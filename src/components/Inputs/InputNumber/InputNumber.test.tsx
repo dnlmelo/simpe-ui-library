@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-node-access */
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import InputNumber from './InputNumber';
+import {InputNumber} from './InputNumber';
 
 describe('<Input />', () => {
   test('it should mount', () => {

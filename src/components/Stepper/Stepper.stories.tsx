@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Stepper from './Stepper';
+import {Stepper} from './Stepper';
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 

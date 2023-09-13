@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import './Breadcrumb.scss';
-import TextLink from '../TextLink/TextLink';
+import {TextLink} from '../TextLink/TextLink';
 import { Icon } from '../Icons/Icon';
 
 interface BreadcrumbProps {

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Tooltip from './Tooltip';
+import {Tooltip} from './Tooltip';
 import { createPortal } from 'react-dom';
 import { Icon } from '../Icons/Icon';
 

@@ -15,7 +15,7 @@ interface StepsProps {
   steps:string[];
 }
 
-const Stepper: FC<StepsProps> = (props) => {
+export const Stepper: FC<StepsProps> = (props) => {
   const { activedStep = 0, completedSteps} = props;
 
   function setActived(i:number) {
@@ -47,4 +47,3 @@ const Stepper: FC<StepsProps> = (props) => {
   </div>)
 
 }
-export default Stepper;

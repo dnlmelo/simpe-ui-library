@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import TextLink from './TextLink';
+import {TextLink} from './TextLink';
 
 describe('<TextLink />', () => {
   test('it should mount', () => {

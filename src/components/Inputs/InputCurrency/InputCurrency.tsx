@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Icon } from '../../Icons/Icon';
 import './InputCurrency.scss';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 import { InputCurrencyProps } from './InputCurrency.types';
 import IntlCurrencyInput from 'react-intl-currency-input';
 import { currencyMask } from './CurrencyMaskConfig';

@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-node-access */
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Collapse from './Collapse';
+import {Collapse} from './Collapse';
 
 describe('<Collapse />', () => {
   test('it should mount', () => {

@@ -1,5 +1,5 @@
 import { Icon } from '../Icons/Icon';
-import Tooltip from '../Tooltip/Tooltip';
+import {Tooltip} from '../Tooltip/Tooltip';
 import './Select.scss';
 
 interface SelectProps extends Omit<React.HTMLProps<HTMLSelectElement>, 'size'> {
@@ -23,7 +23,7 @@ interface SelectProps extends Omit<React.HTMLProps<HTMLSelectElement>, 'size'> {
  error?:boolean 
 }
 
-const Select = (props:SelectProps) => {
+export const Select = (props:SelectProps) => {
   const { error, label, infoMessage, errorMessage, size, ...rest} = props
   const classes = `input select input-size-${size} ${error? 'input-error': ''}`
 
@@ -51,5 +51,3 @@ const Select = (props:SelectProps) => {
     }
   </div>
 };
-
-export default Select;

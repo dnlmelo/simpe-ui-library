@@ -2,7 +2,7 @@ import React, { ChangeEvent, FC, useEffect, useState } from 'react';
 import './Switch.scss';
 import { SwitchProps } from './Switch.type';
 
-const Switch: FC<SwitchProps> = (props) => {
+export const Switch: FC<SwitchProps> = (props) => {
   const { onChange, checked } = props;
   const [_checked, setChecked] = useState(checked || false)
   const classes = 'switch';
@@ -23,5 +23,3 @@ const Switch: FC<SwitchProps> = (props) => {
     </label>
   </>
 }
-
-export default Switch;

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import './Textarea.scss';
 import { Icon } from '../../Icons/Icon';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 import { TextareaProps } from './Textarea.types';
 
 

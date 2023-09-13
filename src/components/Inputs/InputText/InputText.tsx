@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Icon } from '../../Icons/Icon';
 import { InputTextProps } from './InputText.types';
 import './InputText.scss';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 
 export const InputText: FC<InputTextProps> = (props) => {
   const { error, label, infoMessage, errorMessage, size, ...res} = props

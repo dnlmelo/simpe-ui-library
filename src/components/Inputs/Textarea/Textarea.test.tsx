@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-node-access */
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Textarea from './Textarea';
+import {Textarea} from './Textarea';
 
 describe('<Textarea />', () => {
   test('it should mount', () => {

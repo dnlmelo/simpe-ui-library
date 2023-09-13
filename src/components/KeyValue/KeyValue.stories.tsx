@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import KeyValue from './KeyValue';
+import {KeyValue} from './KeyValue';
 
 const meta: Meta<typeof KeyValue>= {
   component: KeyValue,

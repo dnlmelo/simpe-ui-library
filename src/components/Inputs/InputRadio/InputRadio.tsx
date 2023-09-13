@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Icon } from '../../Icons/Icon';
 import './InputRadio.scss';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 import { InputRadioProps } from './InputText.types';
 
 export const InputRadio: FC<InputRadioProps> = (props) => {

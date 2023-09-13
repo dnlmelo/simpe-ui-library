@@ -1,5 +1,5 @@
 import { Icon } from '../../Icons/Icon';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 import { CheckboxProps } from './Checkbox.types';
 import './Checkbox.scss';
 

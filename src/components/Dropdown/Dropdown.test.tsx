@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Dropdown from './Dropdown';
-import TextLink from '../TextLink/TextLink';
+import {Dropdown} from './Dropdown';
+import {TextLink} from '../TextLink/TextLink';
 
 describe('<Dropdown />', () => {
   test('it should mount', () => {
