@@ -1,4 +1,4 @@
-@import '../../foundation/colors';
+
 @import '../../foundation/sizes';
 @import '../../foundation/elevations';
 
@@ -27,58 +27,58 @@
 }
 
 .badge-color-primary{
-    background-color: $color-product-normal;
+    background-color: var(--color-product-normal);
     color: white;
 }
 
 .badge-color-white{
-    background-color: $color-white;
-    color: $color-ink-dark;
-    border: 1px solid $color-cloud-dark;
+    background-color: var(--color-white);
+    color: var(--color-ink-dark);
+    border: 1px solid var(--color-cloud-dark);
 }
 
 .badge-color-primary-light{
-    background-color: $color-product-light;
-    color: $color-product-dark;
-    border: 1px solid $color-product-dark;
+    background-color: var(--color-product-light);
+    color: var(--color-product-dark);
+    border: 1px solid var(--color-product-dark);
 }
 
 .badge-color-critical{
-    background-color: $color-red-normal;
-    color: $color-white;
+    background-color: var(--color-red-normal);
+    color: var(--color-white);
 }
 
 .badge-color-critical-light{
-    background-color: $color-red-light;
-    color: $color-red-dark;
-    border: 1px solid $color-red-dark;
+    background-color: var(--color-red-light);
+    color: var(--color-red-dark);
+    border: 1px solid var(--color-red-dark);
 }
 
 .badge-color-critical{
-    background-color: $color-red-normal;
-    color: $color-white;
+    background-color: var(--color-red-normal);
+    color: var(--color-white);
 }
 
 .badge-color-info{
-    background-color: $color-blue-normal;
-    color: $color-white;
+    background-color: var(--color-blue-normal);
+    color: var(--color-white);
 }
 
 .badge-color-info-light{
-    background-color: $color-blue-light;
-    color: $color-blue-dark;
-    border: 1px solid $color-blue-dark;
+    background-color: var(--color-blue-light);
+    color: var(--color-blue-dark);
+    border: 1px solid var(--color-blue-dark);
 }
 
 .badge-color-success{
-    background-color: $color-green-normal;
-    color: $color-white;
+    background-color: var(--color-green-normal);
+    color: var(--color-white);
 }
 
 .badge-color-success-light{
-    background-color: $color-green-light;
-    color: $color-green-dark;
-    border: 1px solid $color-green-dark;
+    background-color: var(--color-green-light);
+    color: var(--color-green-dark);
+    border: 1px solid var(--color-green-dark);
 }
 
 .badge-elevation-1{

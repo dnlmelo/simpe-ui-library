@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
-import EmptyState from './EmptyState';
+import {EmptyState} from './EmptyState';
 import TextLink from '../TextLink/TextLink';
+import React from 'react';
 
 const meta: Meta<typeof EmptyState> = {
     component: EmptyState,

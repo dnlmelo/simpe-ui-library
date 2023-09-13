@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import './InputRange.scss';
 import { InputRangeProps } from './InputRange.types';
 
-const InputRange: FC<InputRangeProps> = (props) => {
+export const InputRange: FC<InputRangeProps> = (props) => {
   const {label, onChange, minSuffix, maxSuffix, value, ...res} = props
   const classes = `inputRange`;
   const [val, setVal] = useState(value || 0)
@@ -25,5 +25,3 @@ const InputRange: FC<InputRangeProps> = (props) => {
     </div>
   </div>
 }
-
-export default InputRange;

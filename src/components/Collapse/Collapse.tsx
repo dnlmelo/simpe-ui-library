@@ -3,7 +3,7 @@ import './Collapse.scss';
 import { Icon } from '../Icons/Icon';
 import { CollapseProps } from './Collapse.types';
 
-const Collapse = (props:CollapseProps) => {
+export const Collapse = (props:CollapseProps) => {
   const [collapsed, setCollapse] = useState(props.collapsed)
 
   function toggleCollapse(): void {
@@ -27,5 +27,3 @@ const Collapse = (props:CollapseProps) => {
     </div>
   )
 }
-
-export default Collapse;

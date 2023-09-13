@@ -1,4 +1,4 @@
-@import '../../foundation/colors';
+
 
 .steps {
     width: 100%;
@@ -24,20 +24,20 @@
 
     &[data-actived=true]{
         &:before{
-            border-color: $color-ink-dark
+            border-color: var(--color-ink-dark)
         }
         .step-count{
-            background: $color-ink-normal;
+            background: var(--color-ink-normal);
             color: white;
         }
     }
 
     &[data-completed=true]{
         &:before{
-            border-color: $color-product-normal;
+            border-color: var(--color-product-normal);
         }
         .step-count{
-            background: $color-product-normal;
+            background: var(--color-product-normal);
             color: white;
         }
     }
@@ -51,13 +51,13 @@
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
-    background: $color-cloud-normal;
+    background: var(--color-cloud-normal);
     display: inline-block;
 }
 
 .step-label{
     display: block;
-    color: $color-ink-normal;
+    color: var(--color-ink-normal);
     font-weight: bold;
     margin-top: 5px;
 }

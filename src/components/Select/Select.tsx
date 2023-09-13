@@ -25,7 +25,7 @@ interface SelectProps extends Omit<React.HTMLProps<HTMLSelectElement>, 'size'> {
 
 const Select = (props:SelectProps) => {
   const { error, label, infoMessage, errorMessage, size, ...rest} = props
-  const classes = `input input-size-${size} ${error? 'input-error': ''}`
+  const classes = `input select input-size-${size} ${error? 'input-error': ''}`
 
   return <div className={classes} data-testid="Select">
     <label htmlFor={rest.id}>
@@ -40,7 +40,7 @@ const Select = (props:SelectProps) => {
 
     <select {...rest}>
       {props.options.map(
-        (opt)=><option value={opt.value}>{opt.label}</option>
+        (opt, i)=><option key={i} value={opt.value}>{opt.label}</option>
       )}
     </select>
 

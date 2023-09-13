@@ -1,11 +1,11 @@
-@import '../../../foundation/colors';
+
 @import '../../../foundation/sizes';
 
 .inputRadio{
     display: inline-block;
 
     label{
-        color: $color-ink-dark;
+        color: var(--color-ink-dark);
         text-transform: capitalize;
     }
     .icon{
@@ -21,7 +21,7 @@
         width: 20px;
         height: 20px;
         color: currentColor;
-        border: 1px solid $color-cloud-dark;
+        border: 1px solid var(--color-cloud-dark);
         border-radius: 50%;
         vertical-align: bottom;
         display: inline-grid;
@@ -41,24 +41,24 @@
     }
     
     input[type="radio"]:checked{
-        background-color: $color-info;
+        background-color: var(--color-info);
         border: none;
         &::before {
             transform: scale(1);
         }
 
         &:disabled{
-            background-color: $color-ink-light;
+            background-color: var(--color-ink-light);
         }
     }
     
     .error-msg{
         font-size: $size-small;
-        color: $color-red-normal;
+        color: var(--color-red-normal);
     }
 
     &.inputRadio-error input{
-        border: 1px solid $color-error;
+        border: 1px solid var(--color-error);
     } 
 
     &.inputRadio-size-md label{

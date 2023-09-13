@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Dropdown from './Dropdown';
+import {Dropdown} from './Dropdown';
 import TextLink from '../TextLink/TextLink';
 import { Icon } from '../Icons/Icon';
 

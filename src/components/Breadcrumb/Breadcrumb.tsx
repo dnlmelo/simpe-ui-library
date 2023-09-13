@@ -11,7 +11,7 @@ interface BreadcrumbProps {
   }[]
 }
 
-const Breadcrumb: FC<BreadcrumbProps> = (props) => (
+export const Breadcrumb: FC<BreadcrumbProps> = (props) => (
   <div className="breadcrumb" data-testid="Breadcrumb">
     {props.history.map((h, i)=>
       <TextLink 
@@ -25,5 +25,3 @@ const Breadcrumb: FC<BreadcrumbProps> = (props) => (
     )}
   </div>
 );
-
-export default Breadcrumb;

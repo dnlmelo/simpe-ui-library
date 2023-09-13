@@ -1,4 +1,4 @@
-@import '../../foundation/colors';
+
 @import '../../foundation/sizes';
 @import '../../foundation/elevations';
 .textLink {
@@ -20,21 +20,21 @@
 }
 
 .textLink--color-primary{
-    color: $color-product-normal
+    color: var(--color-product-normal)
 }
 
 .textLink--color-info{
-    color: $color-blue-normal
+    color: var(--color-blue-normal)
 }
 
 .textLink--color-critical{
-    color: $color-red-normal
+    color: var(--color-red-normal)
 }
 
 .textLink--color-success{
-    color: $color-green-normal
+    color: var(--color-green-normal)
 }
 
 .textLink--color-normal{
-    color: $color-ink-dark
+    color: var(--color-ink-dark)
 }

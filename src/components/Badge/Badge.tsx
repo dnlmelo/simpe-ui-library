@@ -2,7 +2,7 @@ import { FC } from 'react';
 import './Badge.scss';
 import { BadgeProps } from './Badge.types';
 
-const Badge:FC<BadgeProps> = (props) => {
+export const Badge:FC<BadgeProps> = (props) => {
   const size = `badge-size-${props.size || 'sm'}`
   const classes = `badge-base ${size} badge-color-${props.color}`; 
 
@@ -10,8 +10,6 @@ const Badge:FC<BadgeProps> = (props) => {
     <div className={classes} data-testid="Badge">
       {props.text}
     </div>
-    )
-  };
-  
-  export default Badge;
+  )
+};
   

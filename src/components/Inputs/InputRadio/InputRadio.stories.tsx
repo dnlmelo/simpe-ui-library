@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import InputRadio from './InputRadio';
+import {InputRadio} from './InputRadio';
 
 const meta: Meta<typeof InputRadio>= {
   component: InputRadio,

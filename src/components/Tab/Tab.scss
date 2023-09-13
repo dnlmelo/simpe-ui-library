@@ -1,11 +1,11 @@
-@import '../../foundation/colors';
+
 .tab{
     cursor: pointer;
     display: inline-block;
     padding: 12px 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 3px solid $color-ink-normal;
+    border-bottom: 3px solid var(--color-ink-normal);
     max-width: 240px;
     white-space: nowrap;
     overflow: hidden;
@@ -15,14 +15,14 @@
     line-height: 24px;
 
     &:hover{
-        background-color: $color-white-hover;
+        background-color: var(--color-white-hover);
     }
 
     &:active{
-        background-color: $color-white-active;
+        background-color: var(--color-white-active);
     }
     &[data-active=true]{
-        border-bottom-color: $color-product-normal
+        border-bottom-color: var(--color-product-normal)
     }
     .icon{
         vertical-align: middle;

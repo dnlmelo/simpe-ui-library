@@ -1,9 +1,9 @@
-@import '../../foundation/colors';
+
 @import '../../foundation/sizes';
 @import '../../foundation/elevations';
 
 .icon{
-    color: $color-ink-normal;
+    color: var(--color-ink-normal);
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -32,21 +32,21 @@
 }
 
 .icon-color-success{
-    background: $color-success;
+    background: var(--color-success);
     color: white;
 }
 
 .icon-color-error{
-    background: $color-error;
+    background: var(--color-error);
     color: white;
 }
 
 .icon-color-info{
-    background: $color-info;
+    background: var(--color-info);
     color: white;
 }
 
 .icon-color-attention{
-    background: $color-orange-normal;
+    background: var(--color-orange-normal);
     color: white;
 }

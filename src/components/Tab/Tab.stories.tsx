@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import Tab from './Tab';
+import {Tab} from './Tab';
 import { useState } from 'react';
-import CardSection from '../CardSection/CardSection';
+import {CardSection} from '../CardSection/CardSection';
 
 const meta: Meta<typeof Tab>= {
   component: Tab,

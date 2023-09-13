@@ -1,5 +1,5 @@
 @import '../Button/Button';
-@import '../../foundation/colors';
+
 
 .alert {
     width: 100%;
@@ -8,7 +8,7 @@
     padding: 12px;
     gap: 16px;
     border-left: 3px solid;
-    color: $color-ink-dark;
+    color: var(--color-ink-dark);
 
     &.alert-mode-inline {
         align-items: center;
@@ -37,8 +37,8 @@
 }
 
 .alert-info{
-    border-left-color: $color-info;
-    background-color: $color-blue-light;
+    border-left-color: var(--color-info);
+    background-color: var(--color-blue-light);
 
     .icon,
     .alert-action-primary{
@@ -51,8 +51,8 @@
 }
 
 .alert-error{
-    border-left-color: $color-error;
-    background-color: $color-red-light;
+    border-left-color: var(--color-error);
+    background-color: var(--color-red-light);
     .icon,
     .alert-action-primary{
         @extend .button-color-critical;
@@ -64,8 +64,8 @@
 }
 
 .alert-success{
-    border-left-color: $color-success;
-    background-color: $color-green-light;
+    border-left-color: var(--color-success);
+    background-color: var(--color-green-light);
 
     .icon,
     .alert-action-primary{
@@ -78,8 +78,8 @@
 }
 
 .alert-attention{
-    border-left-color: $color-orange-normal;
-    background-color: $color-orange-light;
+    border-left-color: var(--color-orange-normal);
+    background-color: var(--color-orange-light);
 
     .icon,
     .alert-action-primary{

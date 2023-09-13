@@ -1,4 +1,4 @@
-@import '../../foundation/colors';
+
 @import '../../foundation/sizes';
 @import '../../foundation/elevations';
 
@@ -26,136 +26,136 @@
 }
 
 .dropdown-color-default .dropdown-button{
-    border: 1px solid $color-cloud-dark;
+    border: 1px solid var(--color-cloud-dark);
 }
 
 .dropdown-color-primary .dropdown-button{
-    background-color: $color-product-normal;
+    background-color: var(--color-product-normal);
     color: white;
 
     &:hover{
-        background-color: $color-product-normal-hover
+        background-color: var(--color-product-normal-hover)
     }
     &:active{
-        background-color: $color-product-normal-active
+        background-color: var(--color-product-normal-active)
     }
 }
 
 .dropdown-color-white .dropdown-button {
-    background-color: $color-white;
-    color: $color-ink-dark;
-    border: 1px solid $color-cloud-dark;
+    background-color: var(--color-white);
+    color: var(--color-ink-dark);
+    border: 1px solid var(--color-cloud-dark);
     
     &:hover{
-        background-color: $color-white-hover
+        background-color: var(--color-white-hover)
     }
     &:active{
-        background-color: $color-white-active
+        background-color: var(--color-white-active)
     }
 }
 
 .dropdown-color-primary-light .dropdown-button {
-    background-color: $color-product-light;
-    color: $color-product-dark;
-    border: 1px solid $color-product-dark;
+    background-color: var(--color-product-light);
+    color: var(--color-product-dark);
+    border: 1px solid var(--color-product-dark);
 
     &:hover{
-        background-color: $color-product-light-hover
+        background-color: var(--color-product-light-hover)
     }
     &:active{
-        background-color: $color-product-light-active
+        background-color: var(--color-product-light-active)
     }
 }
 
 .dropdown-color-critical .dropdown-button{
-    background-color: $color-red-normal;
-    color: $color-white;
+    background-color: var(--color-red-normal);
+    color: var(--color-white);
     
     &:hover{
-        background-color: $color-red-normal-hover
+        background-color: var(--color-red-normal-hover)
     }
     &:active{
-        background-color: $color-red-normal-active
+        background-color: var(--color-red-normal-active)
     }
 }
 
 .dropdown-color-critical-light .dropdown-button{
-    background-color: $color-red-light;
-    color: $color-red-dark;
-    border: 1px solid $color-red-dark;
+    background-color: var(--color-red-light);
+    color: var(--color-red-dark);
+    border: 1px solid var(--color-red-dark);
 
     &:hover{
-        background-color: $color-red-light-hover
+        background-color: var(--color-red-light-hover)
     }
     &:active{
-        background-color: $color-red-light-active
+        background-color: var(--color-red-light-active)
     }
 }
 
 .dropdown-color-critical .dropdown-button{
-    background-color: $color-red-normal;
-    color: $color-white;
+    background-color: var(--color-red-normal);
+    color: var(--color-white);
     
     &:hover{
-        background-color: $color-red-normal-hover
+        background-color: var(--color-red-normal-hover)
     }
 
     &:active{
-        background-color: $color-red-normal-active
+        background-color: var(--color-red-normal-active)
     }
 }
 
 .dropdown-color-info .dropdown-button{
-    background-color: $color-blue-normal;
-    color: $color-white;
+    background-color: var(--color-blue-normal);
+    color: var(--color-white);
     
     &:hover{
-        background-color: $color-blue-normal-hover
+        background-color: var(--color-blue-normal-hover)
     }
     
     &:active{
-        background-color: $color-blue-normal-active
+        background-color: var(--color-blue-normal-active)
     }
 }
 
 .dropdown-color-info-light .dropdown-button{
-    background-color: $color-blue-light;
-    color: $color-blue-dark;
-    border: 1px solid $color-blue-dark;
+    background-color: var(--color-blue-light);
+    color: var(--color-blue-dark);
+    border: 1px solid var(--color-blue-dark);
     
     &:hover{
-        background-color: $color-blue-light-hover
+        background-color: var(--color-blue-light-hover)
     }
     
     &:active{
-        background-color: $color-blue-light-active
+        background-color: var(--color-blue-light-active)
     }
 }
 
 .dropdown-color-success .dropdown-button{
-    background-color: $color-green-normal;
-    color: $color-white;
+    background-color: var(--color-green-normal);
+    color: var(--color-white);
     
     &:hover{
-        background-color: $color-green-normal-hover
+        background-color: var(--color-green-normal-hover)
     }
     
     &:active{
-        background-color: $color-green-normal-active
+        background-color: var(--color-green-normal-active)
     }
 }
 
 .dropdown-color-success-light .dropdown-button{
-    background-color: $color-green-light;
-    color: $color-green-dark;
-    border: 1px solid $color-green-dark;
+    background-color: var(--color-green-light);
+    color: var(--color-green-dark);
+    border: 1px solid var(--color-green-dark);
     
     &:hover{
-        background-color: $color-green-light-hover
+        background-color: var(--color-green-light-hover)
     }
     
     &:active{
-        background-color: $color-green-light-active
+        background-color: var(--color-green-light-active)
     }
 }
 
@@ -170,7 +170,7 @@
     inset: 0px auto auto 0px;
     margin: 0px;
     top: 102%;
-    border: 1px solid $color-cloud-dark;
+    border: 1px solid var(--color-cloud-dark);
     @include elevation-1;
 
     &[aria-hidden=false]{
@@ -195,7 +195,7 @@
         }
 
         &:hover{
-            background-color: $color-cloud-light;
+            background-color: var(--color-cloud-light);
         }
     }
 }

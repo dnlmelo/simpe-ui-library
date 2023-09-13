@@ -1,4 +1,4 @@
-@import '../../foundation/colors';
+
 @import '../../foundation/sizes';
 @import '../../foundation/elevations';
 
@@ -7,18 +7,18 @@
 }
 
 .input {
-    input, select, textarea{
+    input, textarea{
         border-radius: 3px;
-        border: 1px solid $color-cloud-dark;
+        border: 1px solid var(--color-cloud-dark);
         background: #fff;
-        color: $color-ink-dark;
+        color: var(--color-ink-dark);
         
         &::placeholder{
-            color: $color-ink-light
+            color: var(--color-ink-light)
         }
         
         &:disabled{
-            background-color: $color-cloud-normal;
+            background-color: var(--color-cloud-normal);
         }
          
     }
@@ -33,43 +33,43 @@
         margin-bottom: 5px;
         font-weight: 600;
         text-transform: capitalize;
-        color: $color-ink-dark;
+        color: var(--color-ink-dark);
     }
 }
 .input-size-sm{
-    label, input, select, textarea{
+    label, input, textarea{
         font-size: $size-small;
     }
-    input, select{
+    input{
         padding: 10px;
     }
 }
 
 .input-size-md{
-    label, input, select, textarea{
+    label, input, textarea{
         font-size: $size-normal;
     }
-    input, select{
+    input{
         padding: 12px;
     }
 }
 
 .input-size-lg{
-    label, input, select, textarea{
+    label, input, textarea{
         font-size: $size-large;
     }
-    input, select{
+    input{
         padding: 14px;
     }
 }
 
 .error-msg{
     font-size: $size-small;
-    color: $color-red-normal;
+    color: var(--color-red-normal);
 }
 
-.input-error input, select{
-    border-color: $color-red-normal
+.input-error input{
+    border-color: var(--color-red-normal)
 }
 
 

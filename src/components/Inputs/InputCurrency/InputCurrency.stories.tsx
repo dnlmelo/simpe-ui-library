@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import InputCurrency from './InputCurrency';
+import {InputCurrency} from './InputCurrency';
 
 const meta: Meta<typeof InputCurrency>= {
   component: InputCurrency,

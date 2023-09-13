@@ -1,4 +1,4 @@
-@import '../../../foundation/colors';
+
 @import '../../../foundation/elevations';
 @import '../../../foundation/sizes';
 
@@ -7,7 +7,7 @@
   
   label{
     display: block;
-    color: $color-info;
+    color: var(--color-info);
   }
 
   input[type=range] {
@@ -16,7 +16,7 @@
     height: 8px;
     margin: 10px 0;
     width: 100%;
-    border: 1px solid $color-cloud-dark;
+    border: 1px solid var(--color-cloud-dark);
     border-radius: 5px;
     
     &:focus {
@@ -27,7 +27,7 @@
       height: 18px;
       width: 18px;
       border-radius: 50%;
-      background: $color-info;
+      background: var(--color-info);
       cursor: pointer;
       -webkit-appearance: none;
     }
@@ -37,7 +37,7 @@
       width: 18px;
       border:none;
       border-radius: 50%;
-      background: $color-info;
+      background: var(--color-info);
       cursor: pointer;
       @include elevation-1;
     }

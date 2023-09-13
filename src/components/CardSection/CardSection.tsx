@@ -6,10 +6,8 @@ interface CardSectionProps {
   children:ReactNode
 }
 
-const CardSection = (props:CardSectionProps) => (
+export const CardSection = (props:CardSectionProps) => (
   <div className="cardSection" data-testid="CardSection">
     {props.children} 
   </div>
 );
-
-export default CardSection;
