@@ -24,32 +24,32 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # - name: Use Node.js ${{ matrix.nodejs-version }}
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: ${{ matrix.nodejs-version }}
+      - name: Use Node.js ${{ matrix.nodejs-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.nodejs-version }}
 
-      # - name: Cache dependencies
-      #   uses: actions/cache@v3.3.1
-      #   with:
-      #     path: "**/node_modules"
-      #     key: node_modules-${{ hashFiles('**/package-lock.json')}}
+      - name: Cache dependencies
+        uses: actions/cache@v3.3.1
+        with:
+          path: "**/node_modules"
+          key: node_modules-${{ hashFiles('**/package-lock.json')}}
 
-      # - name: Install dependencies
-      #   run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-      # - name: Run Storybook build
-      #   run: npm run build-storybook
+      - name: Run Storybook build
+        run: npm run build-storybook
 
-      # - name: Deploy
-      #   if: ${{ github.ref == 'refs/heads/develop' }}
-      #   uses: cloudflare/pages-action@v1
-      #   with:
-      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      #     projectName: ui-library
-      #     directory: storybook-static
-      #     branch: develop
+      - name: Deploy
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ui-library
+          directory: storybook-static
+          branch: develop
 
   release:
     runs-on: ubuntu-latest
@@ -80,8 +80,3 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # - run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
