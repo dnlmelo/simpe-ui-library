@@ -2,7 +2,7 @@ import { FC } from 'react';
 import './KeyValue.scss';
 import { KeyValueProps } from './KeyValue.types';
 
-const KeyValue: FC<KeyValueProps> = (props) => {
+export const KeyValue: FC<KeyValueProps> = (props) => {
   const classes = `keyValue keyValue-size--${props.size || 'md'}`
 
   return (
@@ -12,5 +12,3 @@ const KeyValue: FC<KeyValueProps> = (props) => {
     </div>
   )
 }
-
-export default KeyValue;

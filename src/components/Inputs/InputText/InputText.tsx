@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { Icon } from '../../Icons/Icon';
 import { InputTextProps } from './InputText.types';
 import './InputText.scss';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 
-const InputText: FC<InputTextProps> = (props) => {
+export const InputText: FC<InputTextProps> = (props) => {
   const { error, label, infoMessage, errorMessage, size, ...res} = props
   const classes = `input input-size-${size} ${error? 'input-error': ''}`
 
@@ -28,5 +28,3 @@ const InputText: FC<InputTextProps> = (props) => {
   </div>
   );
 }
-
-export default InputText;

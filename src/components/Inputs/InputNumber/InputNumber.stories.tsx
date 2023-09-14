@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import InputNumber from './InputNumber';
+import {InputNumber} from './InputNumber';
 
 const meta: Meta<typeof InputNumber>= {
   component: InputNumber,

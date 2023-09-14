@@ -1,4 +1,4 @@
-@import '../../foundation/colors';
+
 @import '../../foundation/sizes';
 @import '../../foundation/elevations';
 .keyValue {
@@ -26,10 +26,10 @@
 }
 
 .valueText{
-    color: $color-ink-dark;
+    color: var(--color-ink-dark);
     font-weight: 600;
 }
 
 .keyText{
-    color: $color-ink-normal;
+    color: var(--color-ink-normal);
 }

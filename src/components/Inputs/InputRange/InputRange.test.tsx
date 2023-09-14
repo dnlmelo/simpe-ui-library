@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-node-access */
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import InputRange from './InputRange';
+import {InputRange} from './InputRange';
 
 describe('<InputRange />', () => {
   test('it should mount', () => {

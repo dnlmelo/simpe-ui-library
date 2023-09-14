@@ -5,7 +5,7 @@ import React from 'react';
 import { DropdownProps } from './Dropdown.types';
 
 
-const Dropdown = (props:DropdownProps) => {
+export const Dropdown = (props:DropdownProps) => {
   const [hidden, setHidden] = useState(true)
   const classes = `dropdown dropdown-size-${props.size || 'sm'} dropdown-color-${props.color || "default"}`
 
@@ -23,5 +23,3 @@ const Dropdown = (props:DropdownProps) => {
     </ul>
   </div>
 }
-
-export default Dropdown;

@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-node-access */
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Checkbox from './Checkbox';
+import {Checkbox} from './Checkbox';
 import { CheckboxProps } from './Checkbox.types';
 
 describe('<Checkbox />', () => {

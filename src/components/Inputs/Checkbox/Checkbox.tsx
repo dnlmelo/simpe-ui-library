@@ -1,9 +1,9 @@
 import { Icon } from '../../Icons/Icon';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 import { CheckboxProps } from './Checkbox.types';
 import './Checkbox.scss';
 
-const Checkbox = (props:CheckboxProps) => {
+export const Checkbox = (props:CheckboxProps) => {
   const { error, label, infoMessage, errorMessage, size, ...res} = props
   const classes = `checkbox checkbox-size-${size} ${error? 'checkbox-error': ''}`
 
@@ -31,5 +31,3 @@ const Checkbox = (props:CheckboxProps) => {
     </div>
   );
 };
-
-export default Checkbox;

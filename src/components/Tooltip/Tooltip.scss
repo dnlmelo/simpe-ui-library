@@ -1,4 +1,4 @@
-@import '../../foundation/colors';
+
 @import '../../foundation/sizes';
 @import '../../foundation/elevations';
 @import '../../foundation/utils';
@@ -12,7 +12,7 @@
     border-radius: 5px;
     max-width: 300px;
     position: absolute;
-    background: $color-info;
+    background: var(--color-info);
     @include elevation-2;
 
     &:after{
@@ -25,15 +25,15 @@
     }
 }
 .tooltip-color-info{
-    background: $color-info;
+    background: var(--color-info);
 }
 
 .tooltip-color-error{
-    background: $color-error;
+    background: var(--color-error);
 }
 
 .tooltip-color-success{
-    background: $color-success;
+    background: var(--color-success);
 }
 
 .tooltip-position--top-center,
@@ -44,15 +44,15 @@
         @include arrow-down;
     }
     &.tooltip-color-info:after{
-        border-top-color: $color-info;
+        border-top-color: var(--color-info);
     }
     
     &.tooltip-color-error:after{
-        border-top-color: $color-error;
+        border-top-color: var(--color-error);
     }
     
     &.tooltip-color-success:after{
-        border-top-color: $color-success;
+        border-top-color: var(--color-success);
     }
 }
 
@@ -64,15 +64,15 @@
         @include arrow-up;
     }
     &.tooltip-color-info:after{
-        border-bottom-color: $color-info;
+        border-bottom-color: var(--color-info);
     }
     
     &.tooltip-color-error:after{
-        border-bottom-color: $color-error;
+        border-bottom-color: var(--color-error);
     }
     
     &.tooltip-color-success:after{
-        border-bottom-color: $color-success;
+        border-bottom-color: var(--color-success);
     }
 }
 

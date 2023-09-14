@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import { Icon } from '../../Icons/Icon';
 import './InputCurrency.scss';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 import { InputCurrencyProps } from './InputCurrency.types';
 import IntlCurrencyInput from 'react-intl-currency-input';
 import { currencyMask } from './CurrencyMaskConfig';
 
-const InputCurrency: FC<InputCurrencyProps> = (props) => {
+export const InputCurrency: FC<InputCurrencyProps> = (props) => {
   const { error, label, infoMessage, errorMessage, size, value, ...res} = props
   const classes = `input input-size-${size} ${error? 'input-error': ''}`
 
@@ -39,5 +39,3 @@ const InputCurrency: FC<InputCurrencyProps> = (props) => {
   </div>
   );
 }
-
-export default InputCurrency;

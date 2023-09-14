@@ -3,16 +3,14 @@ import { Button } from '../Button/Button';
 import './Dialog.scss';
 import { DialogProps } from './Dialog.types';
 
-const Dialog:FC<DialogProps> = (props) => {
+export const Dialog:FC<DialogProps> = (props) => {
   const dialog = useRef({} as HTMLDialogElement);
   const { cancelTitle = 'cancelar', confirmTitle = 'confirmar' } = props  
-
   useEffect(()=>{
-    document.getElementById(props.trigger)?.addEventListener('click', onClick.bind(this))
+    document.getElementById(props.trigger)?.addEventListener('click', onClick)
   }, [])
 
   function onClick(){
-    console.log(dialog.current);
     dialog.current.showModal()
   }
 
@@ -48,5 +46,3 @@ const Dialog:FC<DialogProps> = (props) => {
     </>
   )
 }
-
-export default Dialog;

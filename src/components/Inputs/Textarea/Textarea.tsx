@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import './Textarea.scss';
 import { Icon } from '../../Icons/Icon';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 import { TextareaProps } from './Textarea.types';
 
 
-const Textarea: FC<TextareaProps> = (props) => {
+export const Textarea: FC<TextareaProps> = (props) => {
   const { error, label, infoMessage, errorMessage, size, ...res} = props;
   const classes = `input textarea input-size-${size} ${error? 'input-error': ''}`
 
@@ -29,5 +29,3 @@ const Textarea: FC<TextareaProps> = (props) => {
     }
   </div>
 }
-
-export default Textarea;

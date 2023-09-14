@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import '../src/foundation/index.scss'
+import '../src/themes/finvity.scss'
 
 const preview: Preview = {
   parameters: {

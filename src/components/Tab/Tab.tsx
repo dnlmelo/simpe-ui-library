@@ -3,7 +3,7 @@ import './Tab.scss';
 import { TabProps } from './Tab.types';
 import { Icon } from '../Icons/Icon';
 
-const Tab: FC<TabProps> = (props) => {
+export const Tab: FC<TabProps> = (props) => {
   const classes = `tab tab-icon-${props.iconPos}`
   let icon = props.icon? <Icon name={props.icon} size={'sm'}></Icon> : '';
 
@@ -18,5 +18,3 @@ const Tab: FC<TabProps> = (props) => {
     {props.iconPos == 'right' && icon }
   </div>)
 }
-
-export default Tab;

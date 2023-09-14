@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Dropdown from './Dropdown';
-import TextLink from '../TextLink/TextLink';
+import {Dropdown} from './Dropdown';
+import {TextLink} from '../TextLink/TextLink';
 import { Icon } from '../Icons/Icon';
 
 const meta: Meta<typeof Dropdown>= {

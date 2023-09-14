@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import CardSection from './CardSection';
+import { CardSection } from './CardSection';
 
 const meta: Meta<typeof CardSection>= {
     component: CardSection,

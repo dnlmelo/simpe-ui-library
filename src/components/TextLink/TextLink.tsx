@@ -3,7 +3,7 @@ import './TextLink.scss';
 import { TextLinkProps } from './TextLink.types';
 
 
-const TextLink:FC<TextLinkProps> = ({children, ...res}:TextLinkProps) => {
+export const TextLink:FC<TextLinkProps> = ({children, ...res}:TextLinkProps) => {
   const color = res.color || 'normal'
 
   return <a 
@@ -14,5 +14,3 @@ const TextLink:FC<TextLinkProps> = ({children, ...res}:TextLinkProps) => {
     {children}
   </a>
 };
-
-export default TextLink;

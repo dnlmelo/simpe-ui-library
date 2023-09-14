@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Collapse from './Collapse';
+import {Collapse} from './Collapse';
 
 const meta: Meta<typeof Collapse>= {
     component: Collapse,

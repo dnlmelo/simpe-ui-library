@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import { Icon } from '../../Icons/Icon';
 import './InputRadio.scss';
-import Tooltip from '../../Tooltip/Tooltip';
+import {Tooltip} from '../../Tooltip/Tooltip';
 import { InputRadioProps } from './InputText.types';
 
-const InputRadio: FC<InputRadioProps> = (props) => {
+export const InputRadio: FC<InputRadioProps> = (props) => {
   const { error, label, infoMessage, errorMessage, size, ...res} = props
   const classes = `inputRadio inputRadio-size-${size} ${error? 'inputRadio-error': ''}`
 
@@ -28,5 +28,3 @@ const InputRadio: FC<InputRadioProps> = (props) => {
   </div>
   );
 }
-
-export default InputRadio;

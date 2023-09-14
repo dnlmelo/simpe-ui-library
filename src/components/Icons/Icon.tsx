@@ -6,7 +6,7 @@ import './icon.scss'
 
 library.add(fas);
 
-export function Icon(props:IconProps) {
+export const Icon = (props:IconProps) =>{
     return(
     <span 
         className={ 

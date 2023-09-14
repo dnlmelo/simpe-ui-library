@@ -3,7 +3,7 @@ import { Icon } from '../../Icons/Icon';
 import { InputNumberProps } from './InputNumber.types';
 import './InputNumber.scss';
 
-const InputNumber: FC<InputNumberProps> = (props) => {
+export const InputNumber: FC<InputNumberProps> = (props) => {
   const { onKeyUp, onChange, error = false, label, infoMessage, errorMessage, size, ...res} = props
   const classes = `input input-number input-size-${size} ${error? 'input-error': ''}`
   const [_error, setError] = useState(error)
@@ -34,5 +34,3 @@ const InputNumber: FC<InputNumberProps> = (props) => {
   </div>
   );
 }
-
-export default InputNumber;

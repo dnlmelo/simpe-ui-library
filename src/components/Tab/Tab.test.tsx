@@ -1,7 +1,6 @@
-import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Tab from './Tab';
+import {Tab} from './Tab';
 const fn = jest.fn()
 
 describe('<Tab />', () => {

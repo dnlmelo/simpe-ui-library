@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom';
 
 export const TooltipTrigger = (props:ReactNode)=> (<>{props}</>)
 
-const Tooltip: FC<TooltipProps> = (props) => {
+export const Tooltip: FC<TooltipProps> = (props) => {
   const {x, y, color = 'info', children, triggerId} = props;
   const [hidden, setHidden] = useState(true)
   const classes = `tooltip tooltip-color-${color} tooltip-position--${y}-${x}`;
@@ -67,5 +67,3 @@ const Tooltip: FC<TooltipProps> = (props) => {
     )
   )
 }
-
-export default Tooltip;

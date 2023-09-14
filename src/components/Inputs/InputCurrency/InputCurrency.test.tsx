@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-node-access */
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import InputCurrency from './InputCurrency';
+import {InputCurrency} from './InputCurrency';
 
 //o espaço entre R$ e 0 está "diferente" entre as strings
 const trimValue = (value:string)=>value.replace(/\s/g, '')

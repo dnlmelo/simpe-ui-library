@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Tooltip from './Tooltip';
+import {Tooltip} from './Tooltip';
 import { TooltipProps } from './Tooltip.types';
 
 describe('<Tooltip />', () => {
