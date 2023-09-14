@@ -1,7 +1,7 @@
 @import '../foundation/base';
 
 :root{
-    // Product
+    /***** Product - NEW *****
     --color-product-normal: #57A5A1;
     --color-product-normal-hover: #4B9A96;
     --color-product-normal-active: #4B8986;
@@ -13,7 +13,23 @@
     --color-product-light:#ECF8F7;
     --color-product-light-active:#D6F0EC;
     --color-product-light-hover: #BFE8E2;
+    */ 
+
+    /***** Product - OLD *****/
+    --color-product-normal: rgb(100, 152, 199)
+    --color-product-normal-hover: rgb(90, 139, 184);
+    --color-product-normal-active: rgb(77, 120, 159);
     
+    --color-product-dark: rgb(47, 94, 137)
+    --color-product-dark-active: rgb(42, 89, 132)
+    --color-product-dark-hover: rgb(37, 85, 12)
+    
+    --color-product-light: #F1F8FE;
+    --color-product-light-active:#DEF0FC;
+    --color-product-light-hover: #C7E4FA;
+
+
+
     // White
     --color-white: #fff;
     --color-white-hover: #F1F4F7;
