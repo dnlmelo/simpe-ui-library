@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/finvity/ui-library/compare/v1.2.0...v1.3.0) (2023-09-14)
+
+
+### Features
+
+* Adiciona as cores antigas para a primeira etapa do redesign ([f575397](https://github.com/finvity/ui-library/commit/f57539763433a6e58c48ca722bebeae7bc6e86ab))
+
 # [1.2.0](https://github.com/finvity/ui-library/compare/v1.1.0...v1.2.0) (2023-09-14)
 
 
