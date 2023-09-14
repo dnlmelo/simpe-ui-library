@@ -1,6 +1,6 @@
 {
   "name": "@finvity/ui-library",
-  "version": "1.2.0",
+  "version": "1.1.0",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "files": [
@@ -129,6 +129,7 @@
         }
       ],
       "@semantic-release/npm",
+      "@semantic-release/github",
       [
         "@semantic-release/git",
         {
@@ -138,8 +139,7 @@
           ],
           "message": "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
-      ],
-      "@semantic-release/github"
+      ]
     ]
   }
 }
