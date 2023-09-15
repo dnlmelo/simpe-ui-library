@@ -6,9 +6,8 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 3px solid var(--color-ink-normal);
-    max-width: 240px;
     white-space: nowrap;
-    overflow: hidden;
+    width: 100%;
     text-overflow: ellipsis;
     text-align: center;
     font-weight: 500;
