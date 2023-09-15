@@ -38,3 +38,47 @@
     border-right: 5px solid ; 
 }
 
+//flex helpers
+.d-flex{
+    display: flex;
+}
+
+.d-flex-wrap{
+    flex-wrap: wrap;
+}
+
+.d-flex-column{
+    flex-direction: column;
+}
+
+.d-flex-space-between{
+    justify-content: space-between;
+}
+
+.d-flex-align-center{
+    align-items: center;
+}
+
+.d-flex-align-baseline{
+    align-items: baseline;
+}
+
+.d-flex-align-end{
+    align-items: end;
+}
+
+.d-flex-align-top{
+    align-items: flex-start;
+}
+
+.d-flex-wrapped{
+    flex-wrap: wrap;
+}
+
+.flex-1{
+    flex: 1
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
