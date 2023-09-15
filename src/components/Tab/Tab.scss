@@ -17,19 +17,25 @@
         background-color: white;
     }
 
+    &[data-active=true],
     &:active{
-        background-color: white
-    }
-    &[data-active=true]{
+        background-color: white;
         border-bottom-color: var(--color-product-normal)
     }
+
+    svg,
     .icon{
         vertical-align: middle;
+        height: 15px;
+        width: 15px;
     }
+
+    &.tab-icon-left svg,
     &.tab-icon-left .icon{
         margin-right: 12px
     }
 
+    &.tab-icon-left svg,
     &.tab-icon-right .icon{
         margin-left: 12px
     }
