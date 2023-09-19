@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/finvity/ui-library/compare/v1.4.0...v1.4.1) (2023-09-19)
+
+
+### Bug Fixes
+
+* Retira o capitalize do input (ele considera o - como separador ex: E-Mail) ([e03b790](https://github.com/finvity/ui-library/commit/e03b790480a16432cbc71caa47bba603784d6c59))
+
 # [1.4.0](https://github.com/finvity/ui-library/compare/v1.3.0...v1.4.0) (2023-09-16)
 
 
