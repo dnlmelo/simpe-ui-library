@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/finvity/ui-library/compare/v1.4.1...v1.5.0) (2023-09-19)
+
+
+### Features
+
+* import table styles ([eba8db7](https://github.com/finvity/ui-library/commit/eba8db7b00f13e404652c9c6810676f92978c7aa))
+
 ## [1.4.1](https://github.com/finvity/ui-library/compare/v1.4.0...v1.4.1) (2023-09-19)
 
 
