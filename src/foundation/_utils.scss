@@ -1,4 +1,4 @@
-@use 'typography';
+@use 'typography' as t;
 
 .showing{
     display: initial;
@@ -101,49 +101,49 @@
 }
 
 .text-normal{
-    @include text-normal
+    @include t.text-normal
 }
 
 .text-normal-bold{
-    @include text-normal-bold
+    @include t.text-normal-bold
 }
 
 .text-normal-medium{
-    @include text-normal-medium
+    @include t.text-normal-medium
 }
 
 .text-normal-underline{
-    @include text-normal-underline
+    @include t.text-normal-underline
 }
 
 .text-large{
-    @include text-large
+    @include t.text-large
 }
 
 .text-large-bold{
-    @include text-large-bold
+    @include t.text-large-bold
 }
 
 .text-large-medium{
-    @include text-large-medium
+    @include t.text-large-medium
 }
 
 .text-large-underline{
-    @include text-large-underline
+    @include t.text-large-underline
 }
 
 .text-small{
-    @include text-small
+    @include t.text-small
 }
 
 .text-small-bold{
-    @include text-small-bold
+    @include t.text-small-bold
 }
 
 .text-small-medium{
-    @include text-small-medium
+    @include t.text-small-medium
 }
 
 .text-small-underline{
-    @include text-small-underline
+    @include t.text-small-underline
 }
