@@ -1,3 +1,16 @@
+# [1.6.0](https://github.com/finvity/ui-library/compare/v1.5.0...v1.6.0) (2023-09-27)
+
+
+### Bug Fixes
+
+* add props para evitar o overwrite do projeto platform ([0094d03](https://github.com/finvity/ui-library/commit/0094d03bdd2dfc00e23708dd5fec39ca73dfd81a))
+
+
+### Features
+
+* add classes úteis de css ([8889e9a](https://github.com/finvity/ui-library/commit/8889e9ad27876c46f494e458b89c394a016d3bad))
+* add classes úteis de css ([f5c9262](https://github.com/finvity/ui-library/commit/f5c92626f98db762e1eb0179780567d8f2b9dd33))
+
 # [1.5.0](https://github.com/finvity/ui-library/compare/v1.4.1...v1.5.0) (2023-09-19)
 
 
