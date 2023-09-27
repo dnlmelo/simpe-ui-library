@@ -1,3 +1,5 @@
+@use 'typography';
+
 .showing{
     display: initial;
 }
@@ -96,4 +98,52 @@
   font-weight: 600;
   color: var(--color-ink-dark);
   font-size: 12px;
+}
+
+.text-normal{
+    @include text-normal
+}
+
+.text-normal-bold{
+    @include text-normal-bold
+}
+
+.text-normal-medium{
+    @include text-normal-medium
+}
+
+.text-normal-underline{
+    @include text-normal-underline
+}
+
+.text-large{
+    @include text-large
+}
+
+.text-large-bold{
+    @include text-large-bold
+}
+
+.text-large-medium{
+    @include text-large-medium
+}
+
+.text-large-underline{
+    @include text-large-underline
+}
+
+.text-small{
+    @include text-small
+}
+
+.text-small-bold{
+    @include text-small-bold
+}
+
+.text-small-medium{
+    @include text-small-medium
+}
+
+.text-small-underline{
+    @include text-small-underline
 }
