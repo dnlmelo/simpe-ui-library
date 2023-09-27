@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/finvity/ui-library/compare/v1.6.0...v1.7.0) (2023-09-27)
+
+
+### Features
+
+* add sm size no inputradio ([aea24be](https://github.com/finvity/ui-library/commit/aea24bea9b2322b50b001e6ac37f1c918ab2a3be))
+
 # [1.6.0](https://github.com/finvity/ui-library/compare/v1.5.0...v1.6.0) (2023-09-27)
 
 
