@@ -64,6 +64,10 @@
         border: 1px solid var(--color-error);
     } 
 
+    &.inputRadio-size-sm label{
+        font-size: $size-small;
+    } 
+
     &.inputRadio-size-md label{
         font-size: $size-normal;
     }
