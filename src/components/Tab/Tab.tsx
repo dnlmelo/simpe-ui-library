@@ -5,7 +5,13 @@ import { Icon } from '../Icons/Icon';
 
 export const Tab: FC<TabProps> = (props) => {
   const classes = `tab tab-icon-${props.iconPos}`
-  let icon = props.icon? <Icon name={props.icon} size={'sm'}></Icon> : '';
+  const {icon, svg} = props;
+
+  let _icon = (()=>{
+      if(icon) 
+        <Icon name={icon} size={'sm'}></Icon>
+      else if(svg) return svg
+  })();
 
   return (
   <div className={classes}
@@ -13,8 +19,8 @@ export const Tab: FC<TabProps> = (props) => {
     data-active={props.active} 
     onClick={()=>props.onActive()}
   >
-    {props.iconPos == 'left' && icon }
+    {props.iconPos === 'left' && _icon }
     {props.label}
-    {props.iconPos == 'right' && icon }
+    {props.iconPos === 'right' && _icon }
   </div>)
 }

@@ -7,6 +7,7 @@
     label{
         color: var(--color-ink-dark);
         text-transform: capitalize;
+        display: inline-block;
     }
     .icon{
         margin-left: 5px;
@@ -20,6 +21,8 @@
         margin: 0;
         width: 20px;
         height: 20px;
+        max-height: none;
+        padding: 0;
         color: currentColor;
         border: 1px solid var(--color-cloud-dark);
         border-radius: 50%;
@@ -59,6 +62,10 @@
 
     &.inputRadio-error input{
         border: 1px solid var(--color-error);
+    } 
+
+    &.inputRadio-size-sm label{
+        font-size: $size-small;
     } 
 
     &.inputRadio-size-md label{

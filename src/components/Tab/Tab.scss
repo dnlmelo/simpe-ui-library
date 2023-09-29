@@ -6,31 +6,36 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 3px solid var(--color-ink-normal);
-    max-width: 240px;
     white-space: nowrap;
-    overflow: hidden;
+    width: 100%;
     text-overflow: ellipsis;
     text-align: center;
     font-weight: 500;
     line-height: 24px;
 
     &:hover{
-        background-color: var(--color-white-hover);
+        background-color: white;
     }
 
+    &[data-active=true],
     &:active{
-        background-color: var(--color-white-active);
-    }
-    &[data-active=true]{
+        background-color: white;
         border-bottom-color: var(--color-product-normal)
     }
+
+    svg,
     .icon{
         vertical-align: middle;
+        height: 15px;
+        width: 15px;
     }
+
+    &.tab-icon-left svg,
     &.tab-icon-left .icon{
         margin-right: 12px
     }
 
+    &.tab-icon-left svg,
     &.tab-icon-right .icon{
         margin-left: 12px
     }

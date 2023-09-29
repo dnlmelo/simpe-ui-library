@@ -1,4 +1,6 @@
 @import '../foundation/base';
+@import '../foundation/utils';
+@import '../components/Table/Table.scss';
 
 :root{
     /***** Product - NEW *****
@@ -116,7 +118,6 @@
     --color-orange-dark-hover:#A75400;
     --color-orange-dark-active: #954a00;
     --color-orange-darker:#803F00;
-    
     
     //Utils
     --color-info: var(--color-blue-normal);
