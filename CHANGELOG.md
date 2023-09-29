@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/finvity/ui-library/compare/v1.7.0...v1.7.1) (2023-09-29)
+
+
+### Bug Fixes
+
+* onChange do Input Currency não respondia os valores raw e masked ([a0e3a19](https://github.com/finvity/ui-library/commit/a0e3a194a964af396e620805d32546b8aada95cf))
+
 # [1.7.0](https://github.com/finvity/ui-library/compare/v1.6.0...v1.7.0) (2023-09-27)
 
 
