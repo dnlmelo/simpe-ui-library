@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/finvity/ui-library/compare/v1.7.2...v1.8.0) (2023-10-03)
+
+
+### Features
+
+* add colors no radio ([4c5f68f](https://github.com/finvity/ui-library/commit/4c5f68fd2ef0216bd2b02c332ec9b7694a550f0f))
+
 ## [1.7.2](https://github.com/finvity/ui-library/compare/v1.7.1...v1.7.2) (2023-10-03)
 
 
