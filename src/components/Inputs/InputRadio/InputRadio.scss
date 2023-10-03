@@ -54,6 +54,15 @@
             background-color: var(--color-ink-light);
         }
     }
+    &.inputRadio-color--success input[type="radio"]:checked{
+        background-color: var(--color-success);
+    }
+    &.inputRadio-color--critical input[type="radio"]:checked{
+        background-color: var(--color-error);
+    }
+    &.inputRadio-color--warning input[type="radio"]:checked{
+        background-color: var(--color-orange-normal);
+    }
     
     .error-msg{
         font-size: $size-small;

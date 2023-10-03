@@ -2,11 +2,16 @@ import { FC } from 'react';
 import { Icon } from '../../Icons/Icon';
 import './InputRadio.scss';
 import {Tooltip} from '../../Tooltip/Tooltip';
-import { InputRadioProps } from './InputText.types';
+import { InputRadioProps } from './InputRadio.types';
 
 export const InputRadio: FC<InputRadioProps> = (props) => {
-  const { error, label, infoMessage, errorMessage, size, ...res} = props
-  const classes = `inputRadio inputRadio-size-${size} ${error? 'inputRadio-error': ''}`
+  const {color, error, label, infoMessage, errorMessage, size, ...res} = props
+  const classes = [
+    'inputRadio',
+    `inputRadio-color--${color}`,
+    `inputRadio-size-${size}`,
+    `${error? 'inputRadio-error': ''}`
+  ].join(' ')
 
   return (
   <div className={classes} data-testid="InputRadio">
