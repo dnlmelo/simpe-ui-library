@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/finvity/ui-library/compare/v1.7.1...v1.7.2) (2023-10-03)
+
+
+### Bug Fixes
+
+* Styles do select escapando do scope ([868cb60](https://github.com/finvity/ui-library/commit/868cb6045f0fae67c07b1f3cfe16fa334d1d7179))
+
 ## [1.7.1](https://github.com/finvity/ui-library/compare/v1.7.0...v1.7.1) (2023-09-29)
 
 
