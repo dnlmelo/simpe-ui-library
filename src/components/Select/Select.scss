@@ -31,28 +31,27 @@
         font-size: inherit;
         font-weight: bold;
     }
-}
 
+    &.input-size-sm{
+        font-size: $size-small;
+        padding: 10px 32px 10px 10px;
+    }
 
-.input-size-sm{
-    font-size: $size-small;
-    padding: 10px 32px 10px 10px;
-}
+    &.input-size-md{
+        font-size: $size-normal;
+    }
 
-.input-size-md{
-    font-size: $size-normal;
-}
+    &.input-size-lg{
+        font-size: $size-large;
+        padding: 14px 32px 14px 14px;
+    }
 
-.input-size-lg{
-    font-size: $size-large;
-    padding: 14px 32px 14px 14px;
-}
+    .error-msg{
+        font-size: $size-small;
+        color: var(--color-red-normal);
+    }
 
-.error-msg{
-    font-size: $size-small;
-    color: var(--color-red-normal);
-}
-
-.input-error select{
-    border-color: var(--color-red-normal)
+    &.input-error select{
+        border-color: var(--color-red-normal)
+    }
 }
