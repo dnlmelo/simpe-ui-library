@@ -7,7 +7,7 @@ export const Button:FC<ButtonProps> = ({children, type, ...rest}) =>{
         'button-base',
         `button-color-${rest.color}`,
         `button-size-${rest.size || 'md'}`
-    ].join('')
+    ].join(' ')
 
     return (
     <button className={classes} {...rest}>
