@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/finvity/ui-library/compare/v1.9.0...v1.9.1) (2023-10-05)
+
+
+### Bug Fixes
+
+* typo ([904858e](https://github.com/finvity/ui-library/commit/904858e552597153ae5c4f1963eed46664395a7a))
+
 # [1.9.0](https://github.com/finvity/ui-library/compare/v1.8.0...v1.9.0) (2023-10-05)
 
 
