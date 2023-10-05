@@ -1,3 +1,11 @@
+# [1.9.0](https://github.com/finvity/ui-library/compare/v1.8.0...v1.9.0) (2023-10-05)
+
+
+### Features
+
+* Add color attention no Badge ([73f3d7c](https://github.com/finvity/ui-library/commit/73f3d7c39ebc8f96737061b13c94f754bab03ead))
+* Atualiza a cor laranja do tema ([2c9f3f2](https://github.com/finvity/ui-library/commit/2c9f3f23d60468151ae930f7c44d2e9e71c53cb5))
+
 # [1.8.0](https://github.com/finvity/ui-library/compare/v1.7.2...v1.8.0) (2023-10-03)
 
 
