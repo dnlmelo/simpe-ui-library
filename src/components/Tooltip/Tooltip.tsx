@@ -16,36 +16,37 @@ export const Tooltip: FC<TooltipProps> = (props) => {
   }
 
   const onMouseEnter = ()=> { 
-    const trigger = document.getElementById(triggerId)!
-    setPosition(trigger.getBoundingClientRect());
+    setPosition();
     setHidden(false) 
   }
 
-  const setPosition = (trigger:DOMRect)=>{
-    const current = ref.current.getBoundingClientRect();
+  const setPosition = ()=>{
     let _left;
+    const trigger = document.getElementById(triggerId)
+    const triggerRect = trigger.getBoundingClientRect()
+    const current = ref.current.getBoundingClientRect();
     const arrowHeight = 5; //arrow do tooltip
     const arrowWidth = 2; //arrow do tooltip
     const _top = (y === 'top'? 
-      (trigger.top - current.height - arrowHeight) : 
-      (trigger.top + trigger.height + arrowHeight))
+      (trigger.offsetTop - current.height - arrowHeight) : 
+      (trigger.offsetTop + triggerRect.height + arrowHeight))
 
     switch (x) {
       case 'center':
         _left = (()=>{
           const center = current.width * 0.5 
-          const centerT = trigger.width * 0.5
+          const centerT = triggerRect.width * 0.5
           const diff = center - centerT;
-          return trigger.left - diff;
+          return triggerRect.left - diff;
         })()
         break;
 
       case 'right':
-        _left = (trigger.right - current.width) + arrowWidth;
+        _left = (triggerRect.right - current.width) + arrowWidth;
         break
 
       default:
-        _left = trigger.left - arrowWidth;
+        _left = triggerRect.left - arrowWidth;
     }
 
     ref.current.style.left = Math.round(_left) + 'px'
@@ -57,13 +58,16 @@ export const Tooltip: FC<TooltipProps> = (props) => {
     const trigger = document.getElementById(triggerId)!
     trigger.addEventListener('mouseover', onMouseEnter)
     trigger.addEventListener('mouseleave', onMouseLeave) 
+    window.addEventListener('scroll', setPosition) 
   }, [])
 
-  return(
-    createPortal(
-    <div className={classes} aria-hidden={hidden} ref={ref} data-testid="Tooltip">
-      {children}
-    </div>, document.body
-    )
+  return createPortal( 
+      <div 
+        className={classes} 
+        aria-hidden={hidden} 
+        ref={ref} 
+        data-testid="Tooltip"
+      > {children} </div>, 
+      document.body
   )
 }
