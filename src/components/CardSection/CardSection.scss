@@ -4,5 +4,10 @@
     padding: 24px;
     border-radius: 5px;
     background: #FFF;
-    @include elevation-1
+    border: 1px solid var(--color-cloud-active);
+
+    &.elevation-1{
+        border: none;
+        @include elevation-1
+    }
 }
