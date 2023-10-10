@@ -56,7 +56,7 @@ describe("Button test", () => {
     btTypes.forEach((v)=>{
       test(`should render button with ${v} type`, () => {
         render(<Button type={v} color="primary">Button</Button>)
-        expect(screen.getByRole('button').getAttribute('type')).toEqual(v)
+        expect(screen.getByText('Button').getAttribute('type')).toEqual(v)
       }); 
     })
   })
