@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/finvity/ui-library/compare/v1.10.0...v1.10.1) (2023-10-10)
+
+
+### Bug Fixes
+
+* text button on left ([98a98e6](https://github.com/finvity/ui-library/commit/98a98e6f4acb235f36e7a4032d5fde7efa991149))
+
 # [1.10.0](https://github.com/finvity/ui-library/compare/v1.9.1...v1.10.0) (2023-10-10)
 
 
