@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/finvity/ui-library/compare/v1.10.1...v1.10.2) (2023-10-10)
+
+
+### Bug Fixes
+
+* ajusta posição do tooltip depois do scroll ([7426847](https://github.com/finvity/ui-library/commit/7426847f0c85c7001f6d80efb029f9349690a881))
+
 ## [1.10.1](https://github.com/finvity/ui-library/compare/v1.10.0...v1.10.1) (2023-10-10)
 
 
