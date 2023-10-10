@@ -1,3 +1,16 @@
+# [1.10.0](https://github.com/finvity/ui-library/compare/v1.9.1...v1.10.0) (2023-10-10)
+
+
+### Bug Fixes
+
+* input range style ([99a7170](https://github.com/finvity/ui-library/commit/99a717011bec784f139f4cd56ec83ab1c7c5b2f9))
+* testes button ([37324e4](https://github.com/finvity/ui-library/commit/37324e4e7315141e12ea18573f2a1b3010e95b3d))
+
+
+### Features
+
+* add opção de utilizar o card sem shadow ([bba16b8](https://github.com/finvity/ui-library/commit/bba16b869fa0d8930a99715a7246f4bdecbccaab))
+
 ## [1.9.1](https://github.com/finvity/ui-library/compare/v1.9.0...v1.9.1) (2023-10-05)
 
 
