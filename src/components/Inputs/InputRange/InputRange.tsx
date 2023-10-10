@@ -20,8 +20,8 @@ export const InputRange: FC<InputRangeProps> = (props) => {
     <input {...res} type="range" value={val} onChange={_onChange}/>
 
     <div className='minMaxLabels' data-testid="minMaxLabels">
-      <span>{minSuffix && `${res.min || '0'} ${minSuffix}`}</span>
-      <span>{maxSuffix && `${res.max || '100'} ${maxSuffix}`}</span>
+      <span>{res.min || ''} {minSuffix || ''} </span>
+      <span>{res.max || ''} {maxSuffix || ''} </span>
     </div>
   </div>
 }
