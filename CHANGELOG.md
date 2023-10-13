@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/finvity/ui-library/compare/v1.10.2...v1.10.3) (2023-10-13)
+
+
+### Bug Fixes
+
+* Retira o capitalize do radio button ([a416b31](https://github.com/finvity/ui-library/commit/a416b31749e5428cd30d805350c4bb6ab7a65802))
+
 ## [1.10.2](https://github.com/finvity/ui-library/compare/v1.10.1...v1.10.2) (2023-10-10)
 
 
