@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/finvity/ui-library/compare/v1.10.3...v1.10.4) (2023-10-27)
+
+
+### Bug Fixes
+
+* add size sm no keyvalue comp ([3bd2182](https://github.com/finvity/ui-library/commit/3bd21826e26f144bef41485e8ea961d7723a6342))
+
 ## [1.10.3](https://github.com/finvity/ui-library/compare/v1.10.2...v1.10.3) (2023-10-13)
 
 
