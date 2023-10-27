@@ -1,10 +1,18 @@
-
 @import '../../foundation/sizes';
 @import '../../foundation/elevations';
+
 .keyValue {
     display: inline-flex;
     flex-direction: column;
-    text-transform: capitalize;
+    
+    &.keyValue-size--sm{
+        .keyText{
+            font-size: $size-small;
+        }
+        .valueText{
+            font-size: $size-normal;
+        }
+    }
 
     &.keyValue-size--md{
         .keyText{
