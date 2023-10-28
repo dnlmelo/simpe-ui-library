@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/finvity/ui-library/compare/v1.10.4...v1.11.0) (2023-10-28)
+
+
+### Features
+
+* add children content pra modal ([7a91461](https://github.com/finvity/ui-library/commit/7a91461f1036016f089a952dceaf879e77520222))
+* add prop content no dialog ([e7a9b3b](https://github.com/finvity/ui-library/commit/e7a9b3ba4fbb11c0167e6733760bb41722d9ce75))
+
 ## [1.10.4](https://github.com/finvity/ui-library/compare/v1.10.3...v1.10.4) (2023-10-27)
 
 
