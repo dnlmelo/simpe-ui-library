@@ -5,7 +5,7 @@ export interface DialogProps {
   trigger:string
 
   /** Conteúdo do Dialog () */
-  content?: ReactNode
+  children?: ReactNode
 
   /** Texto para o botão de confirmar uma ação */
   confirmTitle?: string;

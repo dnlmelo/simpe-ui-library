@@ -6,6 +6,7 @@ import { DialogProps } from './Dialog.types';
 export const Dialog:FC<DialogProps> = (props) => {
   const dialog = useRef({} as HTMLDialogElement);
   const { cancelTitle = 'cancelar', confirmTitle = 'confirmar' } = props  
+
   useEffect(()=>{
     document.getElementById(props.trigger)?.addEventListener('click', onClick)
   }, [])
@@ -26,6 +27,8 @@ export const Dialog:FC<DialogProps> = (props) => {
         <h1 className='dialog-title'>{props.title}</h1>
         <p className='dialog-description'>{props.description}</p>
       </section>
+
+      {props.children}
 
       <form method="dialog">
         <Button 
