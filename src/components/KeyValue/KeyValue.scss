@@ -7,10 +7,10 @@
     
     &.keyValue-size--sm{
         .keyText{
-            font-size: $size-small;
+            font-size: $size-small - 2;
         }
         .valueText{
-            font-size: $size-normal;
+            font-size: $size-normal - 2;
         }
     }
 

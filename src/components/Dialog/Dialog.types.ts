@@ -1,6 +1,11 @@
+import { ReactNode } from "react";
+
 export interface DialogProps {
   /** Id do elemento html ou component clicável que ativa a Dialog */
   trigger:string
+
+  /** Conteúdo do Dialog () */
+  content?: ReactNode
 
   /** Texto para o botão de confirmar uma ação */
   confirmTitle?: string;
