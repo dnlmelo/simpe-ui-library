@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/finvity/ui-library/compare/v1.11.0...v1.11.1) (2023-11-23)
+
+
+### Bug Fixes
+
+* retira app exemplo do build ([ee2df5e](https://github.com/finvity/ui-library/commit/ee2df5e9d13587ae9574753ba09b788f10573fa5))
+
 # [1.11.0](https://github.com/finvity/ui-library/compare/v1.10.4...v1.11.0) (2023-10-28)
 
 
