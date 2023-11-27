@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/finvity/ui-library/compare/v1.11.1...v1.11.2) (2023-11-27)
+
+
+### Bug Fixes
+
+* onChange não sendo passado para o input ([e5f9a41](https://github.com/finvity/ui-library/commit/e5f9a419be60f96560b78de7e182ac671c64fd22))
+
 ## [1.11.1](https://github.com/finvity/ui-library/compare/v1.11.0...v1.11.1) (2023-11-23)
 
 
