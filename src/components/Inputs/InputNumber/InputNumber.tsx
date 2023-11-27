@@ -4,7 +4,7 @@ import { InputNumberProps } from './InputNumber.types';
 import './InputNumber.scss';
 
 export const InputNumber: FC<InputNumberProps> = (props) => {
-  const { onKeyUp, onChange, error = false, label, infoMessage, errorMessage, size, ...res} = props
+  const { onKeyUp, error = false, label, infoMessage, errorMessage, size, ...res} = props
   const classes = `input input-number input-size-${size} ${error? 'input-error': ''}`
   const [_error, setError] = useState(error)
   const _onKeyUp = (e: KeyboardEvent<HTMLInputElement>)=>{
