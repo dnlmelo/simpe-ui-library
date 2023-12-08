@@ -12,12 +12,20 @@ describe('<Input />', () => {
     expect(input).toBeInTheDocument();
   });
 
-  test('check attr value', () => {
+  test('check attr value number', () => {
     render(<InputNumber size='md' value={1} readOnly={true} />);
     
     const input = screen.getByTestId('Input') as Element;
 
     expect(input.querySelector('input')?.value).toBe('1');
+  });
+
+  test('check attr value as string', () => {
+    render(<InputNumber size='md' value={'x'} readOnly={true} />);
+    
+    const input = screen.getByTestId('Input') as Element;
+
+    expect(input.querySelector('input')?.value).toBe('');
   });
 
   test('check attr size', () => {
@@ -44,14 +52,14 @@ describe('<Input />', () => {
   });
 
   test('check attr errorMessage', () => {
-    render(<InputNumber size='md' errorMessage='error' error={true}/>);
+    render(<InputNumber size='md' errorMessage='error' error={true} readOnly={true} />);
     const msg = screen.getByTestId('errorMsg');
 
     expect(msg.textContent).toEqual('error')
   });
 
   test('check attr infoMessage', () => {
-    render(<InputNumber size='md' infoMessage='info' />);
+    render(<InputNumber size='md' infoMessage='info' readOnly={true} />);
     const input = screen.getByTestId('Input') as Element;
 
     expect(input.querySelector('svg')).toBeInTheDocument()

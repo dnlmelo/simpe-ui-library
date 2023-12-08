@@ -4,17 +4,14 @@ import { InputNumberProps } from './InputNumber.types';
 import './InputNumber.scss';
 
 export const InputNumber: FC<InputNumberProps> = (props) => {
-  const { onKeyUp, error = false, label, infoMessage, errorMessage, size, ...res} = props
+  const {value, error = false, label, infoMessage, errorMessage, size, ...res} = props
   const classes = `input input-number input-size-${size} ${error? 'input-error': ''}`
-  const [_error, setError] = useState(error)
-  const _onKeyUp = (e: KeyboardEvent<HTMLInputElement>)=>{
-    if( !e.key.match(/(\d)|,|\./)) {
-      setError(true)
-      return false
-    }
 
-    onKeyUp && onKeyUp(e)
-    return e.key
+  const _onKeyUp = (e: KeyboardEvent<HTMLInputElement>)=>{
+    const keys = ['Backspace', 'Enter']
+    if(!keys.includes(e.key) && !e.key.match(/(\d)|,|\./)) {
+      e.preventDefault()
+    }
   }
 
   return (
@@ -24,9 +21,9 @@ export const InputNumber: FC<InputNumberProps> = (props) => {
       {label}
     </label>
 
-    <input type='number' onKeyUp={_onKeyUp} {...res} />
+    <input type='number' onKeyDown={_onKeyUp} {...res} value={value} />
     
-    {errorMessage && _error? 
+    {errorMessage && error? 
       <div data-testid="errorMsg" className='error-msg' >
         {errorMessage}
       </div> : ""
