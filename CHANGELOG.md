@@ -1,3 +1,11 @@
+## [1.11.3](https://github.com/finvity/ui-library/compare/v1.11.2...v1.11.3) (2023-12-08)
+
+
+### Bug Fixes
+
+* close dialog ([612facd](https://github.com/finvity/ui-library/commit/612facd234a73e6b0ffbd7ed84f5c68dc976853e))
+* input number ([e8bdd88](https://github.com/finvity/ui-library/commit/e8bdd88aeedec27655c1ae39b6612310bbc3bbc3))
+
 ## [1.11.2](https://github.com/finvity/ui-library/compare/v1.11.1...v1.11.2) (2023-11-27)
 
 
