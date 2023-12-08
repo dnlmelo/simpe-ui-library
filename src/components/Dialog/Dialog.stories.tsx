@@ -24,6 +24,7 @@ export const Primary: Story = {
     cancelTitle: 'cancelar',
     confirmTitle: 'confirmar',
     trigger: 'x',
+    children: <form><input type='text'></input></form>,
     onClose: console.log
   }
 };

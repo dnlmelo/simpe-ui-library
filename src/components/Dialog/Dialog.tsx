@@ -8,8 +8,10 @@ export const Dialog:FC<DialogProps> = (props) => {
   const { cancelTitle = 'cancelar', confirmTitle = 'confirmar' } = props  
 
   useEffect(()=>{
-    document.getElementById(props.trigger)?.addEventListener('click', onClick)
-  }, [])
+    if(dialog.current){
+      document.getElementById(props.trigger)?.addEventListener('click', onClick)
+    }
+  }, [dialog.current])
 
   function onClick(){
     dialog.current.showModal()
