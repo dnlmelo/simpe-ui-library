@@ -7,11 +7,17 @@ export const Tab: FC<TabProps> = (props) => {
   const classes = `tab tab-icon-${props.iconPos}`
   const {icon, svg} = props;
 
-  let _icon = (()=>{
-      if(icon) 
-        <Icon name={icon} size={'sm'}></Icon>
-      else if(svg) return svg
-  })();
+  const onClick = () => {
+    props.iconAction && props.iconAction(props.label)
+  }
+
+  let IconOrSVG = ()=>{
+    if(icon){
+      return <Icon name={icon} size={'sm'} onClick={onClick}></Icon>
+    }
+    else if(svg) return svg
+    else <></>
+  };
 
   return (
   <div className={classes}
@@ -19,8 +25,8 @@ export const Tab: FC<TabProps> = (props) => {
     data-active={props.active} 
     onClick={()=>props.onActive()}
   >
-    {props.iconPos === 'left' && _icon }
+    {props.iconPos === 'left' && IconOrSVG() }
     {props.label}
-    {props.iconPos === 'right' && _icon }
+    {props.iconPos === 'right' && IconOrSVG() }
   </div>)
 }

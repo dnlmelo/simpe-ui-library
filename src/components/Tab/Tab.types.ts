@@ -9,7 +9,8 @@ export interface TabProps {
   
     /** Evento disparado ao clicar na tab */
     onActive:Function;
-  
+    
+    iconAction?: (tab: string) => any;
 
     /** Nome do ícone do pacote FontAwesome a ser adiconado ao lado da label. 
      * */
