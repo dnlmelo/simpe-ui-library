@@ -1,3 +1,10 @@
+## [1.11.7](https://github.com/finvity/ui-library/compare/v1.11.6...v1.11.7) (2024-01-03)
+
+
+### Bug Fixes
+
+* imports de arquivo teste ([852aede](https://github.com/finvity/ui-library/commit/852aede5e30b082d48668c69e331bb222a547433))
+
 ## [1.11.6](https://github.com/finvity/ui-library/compare/v1.11.5...v1.11.6) (2024-01-03)
 
 
