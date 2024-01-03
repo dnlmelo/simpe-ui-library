@@ -2,7 +2,8 @@
 @import '../../../foundation/sizes';
 
 .inputRadio{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
 
     label{
         color: var(--color-ink-dark);
