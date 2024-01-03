@@ -15,14 +15,13 @@ export const Checkbox = (props:CheckboxProps) => {
         {...res}
       />
 
-      <label className="check-label" htmlFor={res.id}>
+      {(label || infoMessage) && <label className="check-label" htmlFor={res.id}>
         {props.label}
         {props.infoMessage && <>
         <Icon name='info' size='sm' color="info" id={`info-${res.id}`}></Icon>
         <Tooltip color='info' triggerId={`info-${res.id}`} x={'left'} y={'top'}>{infoMessage}</Tooltip>
-      </>
-      }
-      </label>
+      </>}
+      </label> }
       {errorMessage && error? 
         <div data-testid="errorMsg" className='error-msg'>
           {errorMessage}

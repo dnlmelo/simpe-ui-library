@@ -16,7 +16,7 @@ export const InputCurrency: FC<InputCurrencyProps> = (props) => {
 
   return (
   <div className={classes} data-testid="InputCurrency">
-    <label htmlFor={res.id}>
+    {(label || infoMessage) && <label htmlFor={res.id}>
       {infoMessage && 
       <>
         <Icon name='info' size='sm' color="info" id={`info-${res.id}`}></Icon>
@@ -24,7 +24,7 @@ export const InputCurrency: FC<InputCurrencyProps> = (props) => {
       </>
       }
       {label}
-    </label>
+    </label>}
 
     <IntlCurrencyInput currency="BRL" config={{ locale: 'pt-BR', ...currencyMask }} 
       {...res}

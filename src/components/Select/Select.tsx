@@ -28,7 +28,7 @@ export const Select = (props:SelectProps) => {
   const classes = `input select input-size-${size} ${error? 'input-error': ''}`
 
   return <div className={classes} data-testid="Select">
-    <label htmlFor={rest.id}>
+    {(label || infoMessage) && <label htmlFor={rest.id}>
       {infoMessage && 
       <>
         <Icon name='info' size='sm' color="info" id={`info-${rest.id}`}></Icon>
@@ -36,7 +36,7 @@ export const Select = (props:SelectProps) => {
       </>
       }
       {label}
-    </label>
+    </label>}
 
     <select {...rest}>
       {props.options.map(

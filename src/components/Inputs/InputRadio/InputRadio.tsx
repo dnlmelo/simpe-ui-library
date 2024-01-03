@@ -16,7 +16,7 @@ export const InputRadio: FC<InputRadioProps> = (props) => {
   return (
   <div className={classes} data-testid="InputRadio">
     <input type='radio' {...res} />
-    <label htmlFor={res.id}>
+    {(label || infoMessage) && <label htmlFor={res.id}>
       {label}
       {infoMessage && 
       <>
@@ -24,7 +24,7 @@ export const InputRadio: FC<InputRadioProps> = (props) => {
         <Tooltip color='info' triggerId={`info-${res.id}`} x={'left'} y={'top'}>{infoMessage}</Tooltip>
       </>
       }
-    </label>
+    </label>}
     {errorMessage && error? 
       <div data-testid="errorMsg" className='error-msg'>
         {errorMessage}
