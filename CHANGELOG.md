@@ -1,3 +1,10 @@
+## [1.11.6](https://github.com/finvity/ui-library/compare/v1.11.5...v1.11.6) (2024-01-03)
+
+
+### Bug Fixes
+
+* ajustes de estilo ([e893474](https://github.com/finvity/ui-library/commit/e8934749a24bd5e504a327fd6cc21b3f98847f1b))
+
 ## [1.11.5](https://github.com/finvity/ui-library/compare/v1.11.4...v1.11.5) (2024-01-03)
 
 
