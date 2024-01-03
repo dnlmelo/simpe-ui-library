@@ -1,3 +1,11 @@
+## [1.11.5](https://github.com/finvity/ui-library/compare/v1.11.4...v1.11.5) (2024-01-03)
+
+
+### Bug Fixes
+
+* label sendo renderizado sem texto ([6495c22](https://github.com/finvity/ui-library/commit/6495c224339280809c10e3cdad6da6cf5359493c))
+* label sendo renderizado sem texto ([5ae0641](https://github.com/finvity/ui-library/commit/5ae064167b8f72c18c3cca0400d4795cbb6876b4))
+
 ## [1.11.4](https://github.com/finvity/ui-library/compare/v1.11.3...v1.11.4) (2024-01-03)
 
 
