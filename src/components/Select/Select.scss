@@ -18,13 +18,14 @@
         background-position-y: 50%;
         display: block;
         width: 100%;
-        padding: 10px 32px 10px 10px;
+        padding: 8px 32px 8px 10px;
+        border-radius: 4px;
         font-size: inherit;
         font-weight: 400;
         line-height: 1.5;
         color: #212529;
         background-color: #fff;
-        border: 1px solid #ced4da;
+        border: 1px solid var(--color-cloud-dark);
         transition: border-color .15s ease-in-out,
     }
     label{

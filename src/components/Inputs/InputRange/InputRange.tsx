@@ -13,9 +13,9 @@ export const InputRange: FC<InputRangeProps> = (props) => {
   }
 
   return <div className={classes} data-testid="InputRange" >
-    <label htmlFor={res.id} className='inputRange-label'>
+    {label && <label htmlFor={res.id} className='inputRange-label'>
       {val} {label}
-    </label>
+    </label>}
 
     <input {...res} type="range" value={val} onChange={_onChange}/>
 

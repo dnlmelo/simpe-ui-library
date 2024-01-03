@@ -1,16 +1,26 @@
-import ReactDOM from 'react-dom';
-import { InputCurrency, InputRange, KeyValue, Tooltip } from './components';
-import { useState } from 'react';
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 
-function App(){
-    const [u, s] = useState('')
+import Chart from "react-apexcharts";
+import ReactDOM from "react-dom";
+import { InputNumber, Tab } from "./components";
+import { useState } from "react";
 
-    return <>
-        <InputRange value={'1'}></InputRange>
-        <span id='xxx'>xxx</span>
-        <Tooltip triggerId='xxx' x={'center'} y={'top'} > tooltip </Tooltip>
-        <KeyValue size='sm' keyText='text' valueText='value'></KeyValue>
-    </>
+const App = () => {
+
+  const [val, setVal] = useState<any>('22.00')
+    return (
+      <div className="app">
+        <div className="row">
+          <div className="mixed-chart">
+            {val}
+            <InputNumber size={"sm"} value={val} onChange={(e)=> {
+                setVal((e.target as HTMLInputElement).value)} 
+              }/>
+          </div>
+        </div>
+        <Tab label="xxx" onActive={()=>{}} icon="user" iconAction={console.log} iconPos="right"></Tab>
+      </div>
+    );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
