@@ -16,10 +16,10 @@ export const InputNumber: FC<InputNumberProps> = (props) => {
 
   return (
   <div className={classes} data-testid="Input">
-    <label htmlFor={res.id}>
+    {(label || infoMessage) && <label htmlFor={res.id}>
       {infoMessage && <Icon name='info' size='sm' color="info"></Icon>}
       {label}
-    </label>
+    </label>}
 
     <input type='number' onKeyDown={_onKeyUp} {...res} value={value} />
     
