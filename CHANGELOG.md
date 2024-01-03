@@ -1,3 +1,11 @@
+## [1.11.4](https://github.com/finvity/ui-library/compare/v1.11.3...v1.11.4) (2024-01-03)
+
+
+### Bug Fixes
+
+* icon on tab ([f04a81a](https://github.com/finvity/ui-library/commit/f04a81ac8b2e631ca1b5cb9be8156c1e88dfaccb))
+* label renderizado sem texto ([ec1feea](https://github.com/finvity/ui-library/commit/ec1feea610df4e1a0e5781ff77c2427dde61c0ee))
+
 ## [1.11.3](https://github.com/finvity/ui-library/compare/v1.11.2...v1.11.3) (2023-12-08)
 
 
