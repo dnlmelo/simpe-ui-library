@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/finvity/ui-library/compare/v1.11.7...v1.12.0) (2024-01-17)
+
+
+### Features
+
+* add the ability to return the index of the clicked step ([6422f37](https://github.com/finvity/ui-library/commit/6422f379b8dc995ff19c35e122c07ad15a7d210e))
+
 ## [1.11.7](https://github.com/finvity/ui-library/compare/v1.11.6...v1.11.7) (2024-01-03)
 
 
