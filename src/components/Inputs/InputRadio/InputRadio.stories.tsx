@@ -19,5 +19,6 @@ export const Default: Story = {
     errorMessage: 'error',
     size: 'md',
     value: 'texto',
+    disabled: false
   }
 };
