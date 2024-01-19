@@ -1,6 +1,6 @@
 {
   "name": "@finvity/ui-library",
-  "version": "1.12.0",
+  "version": "1.12.1",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "files": [

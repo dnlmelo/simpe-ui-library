@@ -1,3 +1,12 @@
+## [1.12.1](https://github.com/finvity/ui-library/compare/v1.12.0...v1.12.1) (2024-01-19)
+
+
+### Bug Fixes
+
+* remove broken import ([2b2f3b8](https://github.com/finvity/ui-library/commit/2b2f3b8d7b1aee7959636b86886ac118c29e0a26))
+* remove capitalize do collapse ([51e698b](https://github.com/finvity/ui-library/commit/51e698b769184829ecba93829600383c52d0d8b7))
+* typos ([cf71111](https://github.com/finvity/ui-library/commit/cf71111bd155bf00364b28e8f6cf57ea336cc414))
+
 # [1.12.0](https://github.com/finvity/ui-library/compare/v1.11.7...v1.12.0) (2024-01-17)
 
 
