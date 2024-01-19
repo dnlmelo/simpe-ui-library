@@ -1,57 +1,61 @@
-
-@import '../../foundation/sizes';
-@import '../../foundation/elevations';
+@import "../../foundation/sizes";
+@import "../../foundation/elevations";
 
 .select {
-    .icon{
-        margin-right: 5px;
-        vertical-align: middle;
-    }
-    select{
-        margin-top: 4px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background: white;
-        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-        background-repeat: no-repeat;
-        background-position-x: 99%;
-        background-position-y: 50%;
-        display: block;
-        width: 100%;
-        padding: 8px 32px 8px 10px;
-        border-radius: 4px;
-        font-size: inherit;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        background-color: #fff;
-        border: 1px solid var(--color-cloud-dark);
-        transition: border-color .15s ease-in-out,
-    }
-    label{
-        font-size: inherit;
-    }
+  .icon {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  select {
+    margin-top: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: white;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 50%;
+    display: block;
+    width: 100%;
+    padding: 8px 32px 8px 10px;
+    border-radius: 4px;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid var(--color-cloud-dark);
+    transition: border-color 0.15s ease-in-out;
 
-    &.input-size-sm{
-        font-size: $size-small;
-        padding: 10px 32px 10px 10px;
+    &:disabled {
+      background-color: var(--color-cloud-normal);
     }
+  }
 
-    &.input-size-md{
-        font-size: $size-normal;
-    }
+  label {
+    font-size: inherit;
+  }
 
-    &.input-size-lg{
-        font-size: $size-large;
-        padding: 14px 32px 14px 14px;
-    }
+  &.input-size-sm {
+    font-size: $size-small;
+    padding: 10px 32px 10px 10px;
+  }
 
-    .error-msg{
-        font-size: $size-small;
-        color: var(--color-red-normal);
-    }
+  &.input-size-md {
+    font-size: $size-normal;
+  }
 
-    &.input-error select{
-        border-color: var(--color-red-normal)
-    }
+  &.input-size-lg {
+    font-size: $size-large;
+    padding: 14px 32px 14px 14px;
+  }
+
+  .error-msg {
+    font-size: $size-small;
+    color: var(--color-red-normal);
+  }
+
+  &.input-error select {
+    border-color: var(--color-red-normal);
+  }
 }
