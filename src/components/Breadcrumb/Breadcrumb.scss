@@ -1,11 +1,15 @@
-.breadcrumb .textLink:last-of-type{
-    opacity: 0.5;
-    text-decoration: none;
-}
-.icon{
-    margin-left: 5px;
-}
-.textLink{
-    margin-right: 15px;
-    display: inline;
+.breadcrumb {
+    .textLink:last-of-type{
+        opacity: 0.5;
+        text-decoration: none;
+    }
+
+    .icon{
+        margin-left: 5px;
+    }
+
+    .textLink{
+        margin-right: 15px;
+        display: inline;
+    }
 }
