@@ -21,6 +21,7 @@
   }
 
   &[data-actived="true"] {
+    font-weight: bold;
     &:before {
       border-color: var(--color-product-normal);
     }
@@ -56,6 +57,5 @@
 .step-label {
   display: block;
   color: var(--color-ink-normal);
-  font-weight: bold;
   margin-top: 5px;
 }
