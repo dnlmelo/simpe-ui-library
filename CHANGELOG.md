@@ -1,3 +1,12 @@
+## [1.12.2](https://github.com/finvity/ui-library/compare/v1.12.1...v1.12.2) (2024-01-26)
+
+
+### Bug Fixes
+
+* adiciona o font-bold somente para step ativo ([7399409](https://github.com/finvity/ui-library/commit/73994095ed5e44a854d1803c05aa422f1c9cf975))
+* estilos do breadcrumb fora do container ([3c90091](https://github.com/finvity/ui-library/commit/3c9009119d82b8f2fd916752f400424e309af4e4))
+* retira padding no selectbox ([657f4fe](https://github.com/finvity/ui-library/commit/657f4fe7d21da5183b302faceef75f0bbd393345))
+
 ## [1.12.1](https://github.com/finvity/ui-library/compare/v1.12.0...v1.12.1) (2024-01-19)
 
 
