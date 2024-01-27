@@ -11,13 +11,13 @@ export const Textarea: FC<TextareaProps> = (props) => {
 
   return <div className={classes} data-testid="Textarea">
     <label htmlFor={res.id}>
+      {label}
       {infoMessage && 
       <>
         <Icon name='info' size='sm' color="info" id={`info-${res.id}`}></Icon>
         <Tooltip color='info' triggerId={`info-${res.id}`} x={'left'} y={'top'}>{infoMessage}</Tooltip>
       </>
       }
-      {label}
     </label>
 
     <textarea {...res}></textarea>

@@ -17,13 +17,13 @@ export const InputCurrency: FC<InputCurrencyProps> = (props) => {
   return (
   <div className={classes} data-testid="InputCurrency">
     {(label || infoMessage) && <label htmlFor={res.id}>
+      {label}
       {infoMessage && 
       <>
         <Icon name='info' size='sm' color="info" id={`info-${res.id}`}></Icon>
         <Tooltip color='info' triggerId={`info-${res.id}`} x='left' y='top'>{infoMessage}</Tooltip>
       </>
       }
-      {label}
     </label>}
 
     <IntlCurrencyInput currency="BRL" config={{ locale: 'pt-BR', ...currencyMask }} 

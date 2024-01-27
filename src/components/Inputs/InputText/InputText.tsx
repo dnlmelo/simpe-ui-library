@@ -11,13 +11,13 @@ export const InputText: FC<InputTextProps> = (props) => {
   return (
   <div className={classes} data-testid="Input">
     {(label || infoMessage) && <label htmlFor={res.id}>
-      {infoMessage && 
-      <>
-        <Icon name='info' size='sm' color="info" id={`info-${res.id}`}></Icon>
-        <Tooltip color='info' triggerId={`info-${res.id}`} x={'left'} y={'top'}>{infoMessage}</Tooltip>
-      </>
-      }
       {label}
+      {infoMessage && 
+        <>
+          <Icon name='info' size='sm' color="info" id={`info-${res.id}`}></Icon>
+          <Tooltip color='info' triggerId={`info-${res.id}`} x={'left'} y={'top'}>{infoMessage}</Tooltip>
+        </>
+      }
     </label>}
     <input type='text' {...res} />
     {errorMessage && error? 

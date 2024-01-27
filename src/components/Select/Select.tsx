@@ -29,13 +29,13 @@ export const Select = (props:SelectProps) => {
 
   return <div className={classes} data-testid="Select">
     {(label || infoMessage) && <label htmlFor={rest.id}>
+      {label}
       {infoMessage && 
       <>
         <Icon name='info' size='sm' color="info" id={`info-${rest.id}`}></Icon>
         <Tooltip color='info' triggerId={`info-${rest.id}`} x={'left'} y={'top'}>{infoMessage}</Tooltip>
       </>
       }
-      {label}
     </label>}
 
     <select {...rest}>
