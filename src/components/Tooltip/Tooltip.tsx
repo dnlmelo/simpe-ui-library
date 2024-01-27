@@ -28,8 +28,8 @@ export const Tooltip: FC<TooltipProps> = (props) => {
     const arrowHeight = 5; //arrow do tooltip
     const arrowWidth = 2; //arrow do tooltip
     const _top = (y === 'top'? 
-      (trigger.offsetTop - current.height - arrowHeight) : 
-      (trigger.offsetTop + triggerRect.height + arrowHeight))
+      (triggerRect.top - current.height - arrowHeight) : 
+      (triggerRect.top + triggerRect.height + arrowHeight)) + window.scrollY
 
     switch (x) {
       case 'center':
@@ -58,7 +58,6 @@ export const Tooltip: FC<TooltipProps> = (props) => {
     const trigger = document.getElementById(triggerId)!
     trigger.addEventListener('mouseover', onMouseEnter)
     trigger.addEventListener('mouseleave', onMouseLeave) 
-    window.addEventListener('scroll', setPosition) 
   }, [])
 
   return createPortal( 
