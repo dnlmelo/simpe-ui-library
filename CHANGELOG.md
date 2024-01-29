@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/finvity/ui-library/compare/v1.12.2...v1.12.3) (2024-01-29)
+
+
+### Bug Fixes
+
+* corrige o cálculo da posição Y do tooltip ([9ca35b8](https://github.com/finvity/ui-library/commit/9ca35b865e37adbdbd83f1203d4308882b0ab09a))
+
 ## [1.12.2](https://github.com/finvity/ui-library/compare/v1.12.1...v1.12.2) (2024-01-26)
 
 
