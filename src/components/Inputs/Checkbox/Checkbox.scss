@@ -1,15 +1,14 @@
 @import '../../../foundation/sizes';
 
 .checkbox{
-    display: inline-block;
+    display: flex;
     align-items: center;
     gap: 8px;
     
     .check-input{
         border: 1px solid var(--color-ink-light);
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
+        appearance: auto;
+        margin-right: 4px;
         width: 18px;
         height: 18px;
         margin: 0;
@@ -45,7 +44,6 @@
     }
     label{
         color: var(--color-ink-dark);
-        text-transform: capitalize;
     }
     .icon{
         margin-left: 5px;
