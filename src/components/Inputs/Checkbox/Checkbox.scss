@@ -63,6 +63,10 @@
     &.checkbox-size-md label{
         font-size: $size-normal;
     }
+
+    &.checkbox-size-sm label{
+        font-size: $size-small;
+    }
     
     &.checkbox-size-lg label{
         font-size: $size-large;
