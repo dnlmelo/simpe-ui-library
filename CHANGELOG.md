@@ -1,3 +1,10 @@
+## [1.12.4](https://github.com/finvity/ui-library/compare/v1.12.3...v1.12.4) (2024-01-29)
+
+
+### Bug Fixes
+
+* corrige alteração de tamanho do icon ([f3e4095](https://github.com/finvity/ui-library/commit/f3e409541a056334bbf8a2b832ce5e8b6177495a))
+
 ## [1.12.3](https://github.com/finvity/ui-library/compare/v1.12.2...v1.12.3) (2024-01-29)
 
 
