@@ -1,6 +1,5 @@
-# Finvity UI Library
-Este projeto contém os React components do design system da empresa.
-Veja como utilizar os components no [https://storybook.finvity.com.br](storybook)
+# Simple UI Library
+Projeto de UI Components em React 
 
 ## Contribuição
 - Desenvolver e fazer os testes unitários
